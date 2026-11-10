@@ -39,7 +39,12 @@ const LOVABLE_API_BASE = 'https://api.lovable.dev';
 const CASTLE_PK = 'pk_TaKsqF94pjCsoyepV6mH3V24AXoM6A7M';
 let LOVABLE_GIT_SHA = '6462f9a33cdfbc0c1494b8365435191a99b15b2c';
 
-const CHROME_PATH = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
+// Chrome path — local Windows ou Alpine container
+const CHROME_PATH = process.env.CHROME_PATH || (
+  process.platform === 'linux'
+    ? '/usr/bin/chromium-browser'
+    : 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'
+);
 
 // --- chrome real via spawn + connect ---
 function aguardarPortaDebug(porta, timeoutMs = 45000) {
