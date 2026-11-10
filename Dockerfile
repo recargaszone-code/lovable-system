@@ -8,8 +8,7 @@ RUN apk add --no-cache \
     chromium-chromedriver \
     wqy-zenhei \
     font-noto-emoji \
-    ca-certificates \
-    dumb-init
+    ca-certificates
 
 # Copiar arquivos de dependências
 COPY package*.json ./
@@ -31,9 +30,6 @@ ENV PORT=3700
 # Health check
 HEALTHCHECK --interval=30s --timeout=5s --start-period=30s --retries=3 \
     CMD node -e "require('http').get('http://localhost:3700/health', (r) => {if (r.statusCode !== 200) throw new Error(r.statusCode)})"
-
-# Usar dumb-init para melhor gerenciamento de sinais
-ENTRYPOINT ["/sbin/dumb-init", "--"]
 
 # Iniciar dashboard
 CMD ["node", "dashboard.js"]
