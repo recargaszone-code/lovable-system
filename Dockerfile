@@ -2,13 +2,14 @@ FROM node:20-alpine
 
 WORKDIR /app
 
-# Instalar dependências do sistema (Chrome + fontes)
+# Instalar dependências do sistema (Chrome + fontes + openssl)
 RUN apk add --no-cache \
     chromium \
     chromium-chromedriver \
     wqy-zenhei \
     font-noto-emoji \
-    ca-certificates
+    ca-certificates \
+    openssl
 
 # Copiar arquivos de dependências
 COPY package*.json ./
