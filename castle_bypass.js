@@ -47,7 +47,7 @@ const CHROME_PATH = process.env.CHROME_PATH || (
 );
 
 // --- chrome real via spawn + connect ---
-function aguardarPortaDebug(porta, timeoutMs = 45000) {
+function aguardarPortaDebug(porta, timeoutMs = 90000) {
   const inicio = Date.now();
   return new Promise((resolve, reject) => {
     const tentar = () => {
@@ -106,6 +106,11 @@ async function abrirChromeNativo(proxy_server, extra_args = []) {
     '--start-maximized',
     '--window-size=1366,768',
     '--lang=en-US,en,pt-BR,pt',
+    // Performance flags pra container
+    '--disable-dev-shm-usage',
+    '--disable-gpu',
+    '--no-sandbox',
+    '--disable-software-rasterizer',
     ...extra_args,
   ];
 
