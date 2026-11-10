@@ -35,27 +35,34 @@ const {
 
 const { rotateVPN, ensureVPNConnected, connectVPN, disconnectVPN, getPublicIP, adapterStatus } = require('./vpn_rotator');
 
-const VPN_ROTATE_EVERY = parseInt(process.env.VPN_ROTATE_EVERY || '3', 10);
-const VPN_ENABLED = process.env.VPN_ROTATE !== '0';
-
 const FIREBASE_API_KEY = 'AIzaSyBQNjlw9Vp4tP4VVeANzyPJnqbG2wLbYPw';
 const LOVABLE_API = 'https://api.lovable.dev';
 const TEMPLATE_PROJECT_ID = 'd2d2f51d-b553-46f7-9e86-585e519f1e19';
 
-// Rotação de proxies
-const PROXY_LIST = (process.env.PROXY_LIST || '').split('|').filter(p => p.trim());
+// Proxies hardcoded — rotaciona a cada ciclo
+const PROXY_LIST = [
+  'http://vxikkfjt:0gmdhnvcgzx3@45.38.107.97:6014',
+  'http://vxikkfjt:0gmdhnvcgzx3@64.137.96.74:6641',
+  'http://vxikkfjt:0gmdhnvcgzx3@198.23.243.226:6361',
+  'http://vxikkfjt:0gmdhnvcgzx3@38.154.185.97:6370',
+  'http://vxikkfjt:0gmdhnvcgzx3@84.247.60.125:6095',
+  'http://vxikkfjt:0gmdhnvcgzx3@191.96.254.138:6185',
+  'http://vxikkfjt:0gmdhnvcgzx3@198.46.161.42:5092',
+  'http://vxikkfjt:0gmdhnvcgzx3@64.137.10.153:5803',
+  'http://vxikkfjt:0gmdhnvcgzx3@104.164.49.38:7693',
+  'http://vxikkfjt:0gmdhnvcgzx3@23.26.71.145:5628',
+];
+
 let PROXY_INDEX = 0;
 
 function getNextProxy() {
-  if (!PROXY_LIST.length) return null;
   const proxy = PROXY_LIST[PROXY_INDEX % PROXY_LIST.length];
   PROXY_INDEX++;
-  const [host, port, user, pass] = proxy.split(':');
-  return `http://${user}:${pass}@${host}:${port}`;
+  return proxy;
 }
 
-// Proxy inicial — rotaciona a cada ciclo
-let PROXY = (process.env.LOVABLE_PROXY === 'none' || process.env.LOVABLE_PROXY === '') ? null : (process.env.LOVABLE_PROXY || getNextProxy());
+let PROXY = getNextProxy();
+const VPN_ENABLED = false; // Sem VPN — só proxies
 
 const ACTIVE_KEYS_FILE = 'C:\\Users\\ShadezinX\\active_keys.json';
 const HISTORICO_FILE = path.join(__dirname, 'contas_concluidas_com_chave.txt');

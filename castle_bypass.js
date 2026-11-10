@@ -36,7 +36,7 @@ const VPN_AUTO = _vpn && process.env.VPN_ROTATE !== '0';
 
 const FIREBASE_API_KEY = 'AIzaSyBQNjlw9Vp4tP4VVeANzyPJnqbG2wLbYPw';
 const LOVABLE_API_BASE = 'https://api.lovable.dev';
-const CASTLE_PK = process.env.CASTLE_PK || 'pk_TaKsqF94pjCsoyepV6mH3V24AXoM6A7M';
+const CASTLE_PK = 'pk_TaKsqF94pjCsoyepV6mH3V24AXoM6A7M';
 let LOVABLE_GIT_SHA = '6462f9a33cdfbc0c1494b8365435191a99b15b2c';
 
 const CHROME_PATH = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
