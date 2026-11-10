@@ -54,7 +54,8 @@ function getNextProxy() {
   return `http://${user}:${pass}@${host}:${port}`;
 }
 
-const PROXY = (process.env.LOVABLE_PROXY === 'none' || process.env.LOVABLE_PROXY === '') ? null : (process.env.LOVABLE_PROXY || getNextProxy());
+// Proxy inicial — rotaciona a cada ciclo
+let PROXY = (process.env.LOVABLE_PROXY === 'none' || process.env.LOVABLE_PROXY === '') ? null : (process.env.LOVABLE_PROXY || getNextProxy());
 
 const ACTIVE_KEYS_FILE = 'C:\\Users\\ShadezinX\\active_keys.json';
 const HISTORICO_FILE = path.join(__dirname, 'contas_concluidas_com_chave.txt');
@@ -657,6 +658,12 @@ async function main() {
 
   for (let i = 1; i <= count; i++) {
     console.log(`\n>>> CICLO ${i}/${count} <<<`);
+
+    // Rotaciona proxy a cada ciclo
+    if (PROXY_LIST.length > 0) {
+      PROXY = getNextProxy();
+      console.log(`[proxy] rotacionado: ${PROXY.substring(0, 30)}...`);
+    }
 
     for (let tentativa = 1; tentativa <= 5; tentativa++) {
       try {
