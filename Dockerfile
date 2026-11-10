@@ -31,5 +31,5 @@ ENV PORT=3700
 HEALTHCHECK --interval=30s --timeout=5s --start-period=30s --retries=3 \
     CMD node -e "require('http').get('http://localhost:3700/health', (r) => {if (r.statusCode !== 200) throw new Error(r.statusCode)})"
 
-# Iniciar dashboard
-CMD ["node", "dashboard.js"]
+# Criar 5 contas com proxies rotacionados
+CMD ["node", "fabricador_api.js", "5"]
