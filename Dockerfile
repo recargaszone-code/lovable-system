@@ -15,7 +15,7 @@ RUN apk add --no-cache \
 COPY package*.json ./
 
 # Instalar dependências Node
-RUN npm ci --omit=dev
+RUN npm install --omit=dev
 
 # Copiar código inteiro
 COPY . .
