@@ -47,21 +47,35 @@ const CHROME_PATH = process.env.CHROME_PATH || (
 );
 
 // --- chrome real via spawn + connect ---
-function aguardarPortaDebug(porta, timeoutMs = 90000) {
+function aguardarPortaDebug(porta, timeoutMs = 120000) {
   const inicio = Date.now();
+  let tentativas = 0;
   return new Promise((resolve, reject) => {
     const tentar = () => {
-      const req = http.get(`http://127.0.0.1:${porta}/json/version`, res => {
+      tentativas++;
+      const req = http.get(`http://127.0.0.1:${porta}/json/version`, { timeout: 2000 }, res => {
         res.resume();
-        if (res.statusCode === 200) return resolve(true);
+        if (res.statusCode === 200) {
+          console.log(`[chrome] port ${porta} respondendo em ${Date.now() - inicio}ms (tentativa ${tentativas})`);
+          return resolve(true);
+        }
         retry();
       });
-      req.on('error', retry);
-      req.setTimeout(1000, () => { req.destroy(); retry(); });
+      req.on('error', (err) => {
+        if (tentativas % 10 === 0) console.log(`[chrome] aguardando... tentativa ${tentativas} (${Date.now() - inicio}ms, erro: ${err.code})`);
+        retry();
+      });
+      req.on('timeout', () => {
+        req.destroy();
+        retry();
+      });
     };
     const retry = () => {
-      if (Date.now() - inicio > timeoutMs) return reject(new Error('timeout aguardando Chrome'));
-      setTimeout(tentar, 500);
+      const elapsed = Date.now() - inicio;
+      if (elapsed > timeoutMs) return reject(new Error(`timeout aguardando Chrome após ${tentativas} tentativas (${elapsed}ms)`));
+      // exponential backoff: 100ms, 200ms, 400ms, 800ms, then cap at 2s
+      const delay = Math.min(100 * Math.pow(1.5, Math.floor(tentativas / 5)), 2000);
+      setTimeout(tentar, delay);
     };
     tentar();
   });
@@ -103,14 +117,21 @@ async function abrirChromeNativo(proxy_server, extra_args = []) {
     `--remote-debugging-port=${porta}`,
     '--no-first-run',
     '--no-default-browser-check',
-    '--start-maximized',
-    '--window-size=1366,768',
+    '--window-size=800,600',
     '--lang=en-US,en,pt-BR,pt',
-    // Performance flags pra container
+    // Performance flags pra container com pouca memória
     '--disable-dev-shm-usage',
     '--disable-gpu',
     '--no-sandbox',
     '--disable-software-rasterizer',
+    '--disable-extensions',
+    '--disable-plugins',
+    '--single-process',
+    '--disable-background-networking',
+    '--disable-preconnect',
+    '--disable-sync',
+    '--no-default-browser-check',
+    '--no-pings',
     ...extra_args,
   ];
 
@@ -119,15 +140,22 @@ async function abrirChromeNativo(proxy_server, extra_args = []) {
   //   console.log(`[chrome] proxy: ${proxy.hostPort} (auth: ${proxy.username ? 'yes' : 'no'})`);
   // }
 
-  console.log(`[chrome] abrindo (perfil: ${pastaTemp}, porta: ${porta})...`);
+  console.log(`[chrome] abrindo (perfil: ${pastaTemp}, porta: ${porta}, path: ${CHROME_PATH})...`);
 
   const chromeProc = spawn(CHROME_PATH, chromeArgs, {
     detached: true,
-    stdio: 'ignore',
+    stdio: ['ignore', 'ignore', 'ignore'],
   });
+
+  chromeProc.on('error', (err) => {
+    console.error(`[chrome] spawn error: ${err.message}`);
+  });
+
   chromeProc.unref();
 
-  await aguardarPortaDebug(porta);
+  // Railway containers precisam de mais tempo pra iniciar Chrome
+  const timeoutMs = process.env.RAILWAY_ENVIRONMENT_NAME ? 150000 : 120000;
+  await aguardarPortaDebug(porta, timeoutMs);
   const browser = await puppeteer.connect({
     browserURL: `http://127.0.0.1:${porta}`,
     defaultViewport: null,
