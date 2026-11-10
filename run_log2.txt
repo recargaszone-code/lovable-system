@@ -1,0 +1,212 @@
+============================================================
+    ASSISTENTE LOVABLE - COM DELAY E ESCALA 100% PADRÃO     
+============================================================
+ - Visualização: 100% normal (sem zoom artificial)
+ - Delays de segurança adicionados
+ - Filtro para capturar APENAS o link recém-enviado
+
+[GMAIL] Testando autenticação com o Gmail...
+[GMAIL] Conectado com sucesso (developermax2maker@gmail.com)!
+
+Contas configuradas:
+ [1] Eugênio (Você) -> eugenio@obsidien.online
+ [2] Marta (Esposa) -> marta@obsidien.online
+ [3] Alfredo (Filho) -> alfredo@obsidien.online
+ [4] Dino -> dino@obsidien.online
+ [5] Cadastrar todas as 4 contas fixas em sequência
+ [6] Digitar um E-MAIL PERSONALIZADO manualmente
+ [7] Gerar e cadastrar E-MAILS ALEATÓRIOS (Você escolhe a quantidade)
+ [0] Sair
+------------------------------------------------------------
+
+============================================================
+>>> GERADOR DE E-MAILS ALTAMENTE ALEATÓRIOS
+============================================================
+
+[OK] 3 contas geradas com sucesso (sem repetições):
+ [1] Patricia Moreira -> patriciamoreira@obsidien.online
+ [2] Gabriel Lima -> gabriellima@obsidien.online
+ [3] Bruna Lopes -> brunalopes@obsidien.online
+
+Iniciando Google Chrome normal (processo independente)...
+[CHROME] Abrindo Chrome normal (perfil: C:\Users\SHADEZ~1\AppData\Local\Temp\chrome_temp_1792929027179_812068, porta debug: 9306)...
+[CHROME] Conectado via CDP com sucesso! Perfil: C:\Users\SHADEZ~1\AppData\Local\Temp\chrome_temp_1792929027179_812068
+
+============================================================
+>>> PROCESSANDO CONTA: Patricia Moreira
+>>> E-MAIL: patriciamoreira@obsidien.online
+>>> SENHA ALEATÓRIA GERADA: #ydtM!v!6u6x
+============================================================
+[IMAP] Verificando estado inicial da caixa para patriciamoreira@obsidien.online...
+[IMAP] Maior UID anterior: Geral = 6875 | Conta = 0
+
+[1/6] Acessando a página de login do Lovable (escala normal 100%)...
+[2/6] Digitando o e-mail: patriciamoreira@obsidien.online...
+[3/6] Clicando no botão "Continue"...
+[4/6] Aguardando campo de senha...
+[4/6] Digitando a senha gerada: #ydtM!v!6u6x...
+
+[5/6] Aguardando 8 segundos para o Cloudflare validar...
+[-] Validação Cloudflare: 8s restantes... [-] Validação Cloudflare: 7s restantes... [-] Validação Cloudflare: 6s restantes... [-] Validação Cloudflare: 5s restantes... [-] Validação Cloudflare: 4s restantes... [-] Validação Cloudflare: 3s restantes... [-] Validação Cloudflare: 2s restantes... [-] Validação Cloudflare: 1s restantes... 
+[-] Tempo de validação concluído!
+
+[+] Clicando no botão de cadastro ("Create your account" ou "Log in")...
+[-] Tentativa 1: formulário ainda na tela, aguardando...
+[-] Tentativa 2: formulário ainda na tela, aguardando...
+[-] Tentativa 3: formulário ainda na tela, aguardando...
+[-] Tentativa 4: formulário ainda na tela, aguardando...
+[-] Tentativa 5: formulário ainda na tela, aguardando...
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+>>> ATENÇÃO: O robô tentou clicar, mas a página ainda está na tela de senha.
+>>> Se aparecer o botão "Create your account" ou um Captcha na tela,
+>>> dê um clique nele no navegador agora!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[!] Continuando para a checagem do Gmail...
+
+------------------------------------------------------------
+>>> CONTA PROCESSADA NO SITE! AGORA BUSCANDO NO GMAIL...
+------------------------------------------------------------
+
+[6/6] Monitorando o Gmail para capturar a ÚLTIMA mensagem de verificação recebida...
+
+============================================================
+[IMAP] MONITORANDO CHEGADA DO NOVO E-MAIL DE VERIFICAÇÃO
+[IMAP] Conta Alvo: patriciamoreira@obsidien.online
+[IMAP] UID Anterior Geral: 6875 | UID Anterior Conta: 0
+[IMAP] Tempo Limite: 120s
+============================================================
+[IMAP] Aguardando a ÚLTIMA mensagem de verificação para patriciamoreira@obsidien.online... (3s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para patriciamoreira@obsidien.online... (9s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para patriciamoreira@obsidien.online... (14s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para patriciamoreira@obsidien.online... (18s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para patriciamoreira@obsidien.online... (23s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para patriciamoreira@obsidien.online... (28s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para patriciamoreira@obsidien.online... (31s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para patriciamoreira@obsidien.online... (36s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para patriciamoreira@obsidien.online... (40s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para patriciamoreira@obsidien.online... (43s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para patriciamoreira@obsidien.online... (48s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para patriciamoreira@obsidien.online... (53s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para patriciamoreira@obsidien.online... (57s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para patriciamoreira@obsidien.online... (60s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para patriciamoreira@obsidien.online... (64s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para patriciamoreira@obsidien.online... (68s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para patriciamoreira@obsidien.online... (71s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para patriciamoreira@obsidien.online... (74s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para patriciamoreira@obsidien.online... (78s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para patriciamoreira@obsidien.online... (82s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para patriciamoreira@obsidien.online... (86s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para patriciamoreira@obsidien.online... (92s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para patriciamoreira@obsidien.online... (97s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para patriciamoreira@obsidien.online... (101s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para patriciamoreira@obsidien.online... (104s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para patriciamoreira@obsidien.online... (108s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para patriciamoreira@obsidien.online... (112s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para patriciamoreira@obsidien.online... (116s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para patriciamoreira@obsidien.online... (121s / 120s) 
+[IMAP] Tempo de espera excedido. Buscando a ÚLTIMA mensagem absoluta da Lovable no inbox...
+
+[AVISO] O link novo não foi identificado dentro do tempo limite.
+
+[ERRO] Falha ao processar patriciamoreira@obsidien.online (tentativa 1/2): readline was closed
+
+============================================================
+>>> PROCESSANDO CONTA: Patricia Moreira
+>>> E-MAIL: patriciamoreira@obsidien.online
+>>> SENHA ALEATÓRIA GERADA: #ydtM!v!6u6x
+============================================================
+[IMAP] Verificando estado inicial da caixa para patriciamoreira@obsidien.online...
+[IMAP] Maior UID anterior: Geral = 6875 | Conta = 0
+
+[1/6] Acessando a página de login do Lovable (escala normal 100%)...
+[!] Nota: e-mail já preenchido.
+[4/6] Aguardando campo de senha...
+[!] Erro na etapa da senha: Waiting for selector `input#password` failed
+
+------------------------------------------------------------
+>>> CONTA PROCESSADA NO SITE! AGORA BUSCANDO NO GMAIL...
+------------------------------------------------------------
+
+[6/6] Monitorando o Gmail para capturar a ÚLTIMA mensagem de verificação recebida...
+
+============================================================
+[IMAP] MONITORANDO CHEGADA DO NOVO E-MAIL DE VERIFICAÇÃO
+[IMAP] Conta Alvo: patriciamoreira@obsidien.online
+[IMAP] UID Anterior Geral: 6875 | UID Anterior Conta: 0
+[IMAP] Tempo Limite: 120s
+============================================================
+
+[ERRO] Falha ao processar patriciamoreira@obsidien.online (tentativa 2/2): read ECONNRESET
+
+[LOTE] Aguardando 24s antes da próxima conta (2/3)...
+
+============================================================
+>>> PROCESSANDO CONTA: Gabriel Lima
+>>> E-MAIL: gabriellima@obsidien.online
+>>> SENHA ALEATÓRIA GERADA: s7*S2X&LjG5e
+============================================================
+[IMAP] Verificando estado inicial da caixa para gabriellima@obsidien.online...
+[IMAP] Maior UID anterior: Geral = 6875 | Conta = 0
+
+[1/6] Acessando a página de login do Lovable (escala normal 100%)...
+[!] Nota: e-mail já preenchido.
+[4/6] Aguardando campo de senha...
+[!] Erro na etapa da senha: Waiting for selector `input#password` failed
+
+------------------------------------------------------------
+>>> CONTA PROCESSADA NO SITE! AGORA BUSCANDO NO GMAIL...
+------------------------------------------------------------
+
+[6/6] Monitorando o Gmail para capturar a ÚLTIMA mensagem de verificação recebida...
+
+============================================================
+[IMAP] MONITORANDO CHEGADA DO NOVO E-MAIL DE VERIFICAÇÃO
+[IMAP] Conta Alvo: gabriellima@obsidien.online
+[IMAP] UID Anterior Geral: 6875 | UID Anterior Conta: 0
+[IMAP] Tempo Limite: 120s
+============================================================
+[IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (3s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (7s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (10s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (13s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (16s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (19s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (22s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (25s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (28s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (32s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (35s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (38s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (42s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (45s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (48s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (52s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (55s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (58s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (62s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (66s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (69s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (73s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (76s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (79s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (82s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (84s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (87s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (90s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (93s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (96s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (99s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (102s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (106s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (109s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (112s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (115s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (118s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (120s / 120s) 
+[IMAP] Tempo de espera excedido. Buscando a ÚLTIMA mensagem absoluta da Lovable no inbox...
+
+[AVISO] O link novo não foi identificado dentro do tempo limite.
+
+[ERRO] Falha ao processar gabriellima@obsidien.online (tentativa 1/2): readline was closed
+
+============================================================
+>>> PROCESSANDO CONTA: Gabriel Lima
+>>> E-MAIL: gabriellima@obsidien.online
+>>> SENHA ALEATÓRIA GERADA: s7*S2X&LjG5e
+============================================================
+[IMAP] Verificando estado inicial da caixa para gabriellima@obsidien.online...
+[IMAP] Maior UID anterior: Geral = 6875 | Conta = 0
+
+[1/6] Acessando a página de login do Lovable (escala normal 100%)...
+[2/6] Digitando o e-mail: gabriellima@obsidien.online...
+[3/6] Clicando no botão "Continue"...
+[4/6] Aguardando campo de senha...
+[!] Erro na etapa da senha: Attempted to use detached Frame '45A067193392486C83F25062A652BB89'.
+
+------------------------------------------------------------
+>>> CONTA PROCESSADA NO SITE! AGORA BUSCANDO NO GMAIL...
+------------------------------------------------------------
+
+[6/6] Monitorando o Gmail para capturar a ÚLTIMA mensagem de verificação recebida...
+
+============================================================
+[IMAP] MONITORANDO CHEGADA DO NOVO E-MAIL DE VERIFICAÇÃO
+[IMAP] Conta Alvo: gabriellima@obsidien.online
+[IMAP] UID Anterior Geral: 6875 | UID Anterior Conta: 0
+[IMAP] Tempo Limite: 120s
+============================================================
+[IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (1s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (4s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (7s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (10s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (14s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (18s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (22s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (25s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (28s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (31s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (35s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (38s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (42s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (46s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (49s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (51s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (55s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (58s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (62s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (69s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (73s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (76s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (79s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (84s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (87s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (89s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (95s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (98s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (100s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (104s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (107s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (110s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (114s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (117s / 120s) [IMAP] Aguardando a ÚLTIMA mensagem de verificação para gabriellima@obsidien.online... (120s / 120s) 
+[IMAP] Tempo de espera excedido. Buscando a ÚLTIMA mensagem absoluta da Lovable no inbox...
+
+[AVISO] O link novo não foi identificado dentro do tempo limite.
+
+[ERRO] Falha ao processar gabriellima@obsidien.online (tentativa 2/2): readline was closed
+
+[LOTE] Aguardando 20s antes da próxima conta (3/3)...
+
+============================================================
+>>> PROCESSANDO CONTA: Bruna Lopes
+>>> E-MAIL: brunalopes@obsidien.online
+>>> SENHA ALEATÓRIA GERADA: @88vytcXvZuz
+============================================================
+[IMAP] Verificando estado inicial da caixa para brunalopes@obsidien.online...
+[IMAP] Maior UID anterior: Geral = 6875 | Conta = 0
+
+[ERRO] Falha ao processar brunalopes@obsidien.online (tentativa 1/2): Connection closed.
+
+============================================================
+>>> PROCESSANDO CONTA: Bruna Lopes
+>>> E-MAIL: brunalopes@obsidien.online
+>>> SENHA ALEATÓRIA GERADA: @88vytcXvZuz
+============================================================
+[IMAP] Verificando estado inicial da caixa para brunalopes@obsidien.online...
+[IMAP] Maior UID anterior: Geral = 6875 | Conta = 0
+
+[ERRO] Falha ao processar brunalopes@obsidien.online (tentativa 2/2): Connection closed.
+
+============================================================
+ LOTE FINALIZADO 
+============================================================
+[OK] Sucesso: 0/3
+[FALHA] 3 conta(s) não concluída(s):
+   - patriciamoreira@obsidien.online: read ECONNRESET
+   - gabriellima@obsidien.online: readline was closed
+   - brunalopes@obsidien.online: Connection closed.
+============================================================
+

@@ -1,0 +1,43 @@
+============================================================
+    ASSISTENTE LOVABLE - COM DELAY E ESCALA 100% PADRÃO     
+============================================================
+ - Visualização: 100% normal (sem zoom artificial)
+ - Delays de segurança adicionados
+ - Filtro para capturar APENAS o link recém-enviado
+
+[GMAIL] Testando autenticação com o Gmail...
+[GMAIL] Conectado com sucesso (developermax2maker@gmail.com)!
+
+Contas configuradas:
+ [1] Eugênio (Você) -> eugenio@obsidien.online
+ [2] Marta (Esposa) -> marta@obsidien.online
+ [3] Alfredo (Filho) -> alfredo@obsidien.online
+ [4] Dino -> dino@obsidien.online
+ [5] Cadastrar todas as 4 contas fixas em sequência
+ [6] Digitar um E-MAIL PERSONALIZADO manualmente
+ [7] Gerar e cadastrar E-MAILS ALEATÓRIOS (Você escolhe a quantidade)
+ [0] Sair
+------------------------------------------------------------
+
+============================================================
+>>> GERADOR DE E-MAILS ALTAMENTE ALEATÓRIOS
+============================================================
+
+[OK] 3 contas geradas com sucesso (sem repetições):
+ [1] Fernanda Barbosa -> fernandabarbosa@obsidien.online
+ [2] Larissa Machado -> larissamachado@obsidien.online
+ [3] Vanessa Alves -> vanessaalves@obsidien.online
+
+Iniciando Google Chrome normal (processo independente)...
+[CHROME] Abrindo Chrome normal (perfil: C:\Users\SHADEZ~1\AppData\Local\Temp\chrome_temp_1792929843486_210468, porta debug: 9315)...
+Erro geral: Error: Timeout aguardando porta de debug do Chrome
+    at retry (B:\Lovable - Copy\assistente_lovable.js:116:58)
+    at ClientRequest.<anonymous> (B:\Lovable - Copy\assistente_lovable.js:113:51)
+    at Object.onceWrapper (node:events:630:28)
+    at ClientRequest.emit (node:events:509:28)
+    at Socket.emitRequestTimeout (node:_http_client:948:9)
+    at Object.onceWrapper (node:events:630:28)
+    at Socket.emit (node:events:521:24)
+    at Socket._onTimeout (node:net:610:8)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7)

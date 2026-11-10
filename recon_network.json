@@ -1,0 +1,303 @@
+{
+  "email": "recon_212312de@gmail.com",
+  "hits": [
+    {
+      "phase": "request",
+      "url": "https://lovable.dev/assets/vendor-firebase-CuU2E0oW.js",
+      "method": "GET",
+      "headers": {
+        "Origin": "https://lovable.dev",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "https://lovable.dev/signup",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "requestId": "23272.12",
+      "ts": 1793813212860
+    },
+    {
+      "phase": "request",
+      "url": "https://lovable.dev/assets/vendor-firebase-core-ChSZSTvC.js",
+      "method": "GET",
+      "headers": {
+        "Origin": "https://lovable.dev",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "https://lovable.dev/signup",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "requestId": "23272.21",
+      "ts": 1793813212861
+    },
+    {
+      "phase": "response",
+      "url": "https://lovable.dev/assets/vendor-firebase-CuU2E0oW.js",
+      "status": 200,
+      "headers": {
+        "cache-control": "public, max-age=31536000, immutable",
+        "content-encoding": "br",
+        "cf-cache-status": "HIT",
+        "age": "70318",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a5555398de94a363-JNB",
+        "access-control-allow-origin": "*",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Wed, 04 Nov 2026 17:26:56 GMT",
+        "content-type": "text/javascript; charset=utf-8",
+        "vary": "Host",
+        "server": "cloudflare",
+        "x-deployment-id": "8119ea5abe87a84e2a1ebacf2093f54ccd5a8603b8971c13d75c8b9ff545c654"
+      },
+      "requestId": "23272.12",
+      "ts": 1793813213302
+    },
+    {
+      "phase": "response",
+      "url": "https://lovable.dev/assets/vendor-firebase-core-ChSZSTvC.js",
+      "status": 200,
+      "headers": {
+        "cache-control": "public, max-age=31536000, immutable",
+        "content-encoding": "br",
+        "cf-cache-status": "HIT",
+        "age": "74400",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-content-type-options": "nosniff",
+        "cf-ray": "a5555398dea1a363-JNB",
+        "access-control-allow-origin": "*",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "content-length": "10002",
+        "date": "Wed, 04 Nov 2026 17:26:56 GMT",
+        "content-type": "text/javascript; charset=utf-8",
+        "vary": "accept-encoding, Host",
+        "server": "cloudflare",
+        "x-deployment-id": "3e183b625ed514c203eb94dffd70ffcb0a7430b424ffc821dcfd7fec3089c543"
+      },
+      "requestId": "23272.21",
+      "ts": 1793813213453
+    },
+    {
+      "phase": "request",
+      "url": "https://lovable.dev/assets/castle.umd-BziypBlb.js",
+      "method": "GET",
+      "headers": {
+        "Origin": "https://lovable.dev",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0"
+      },
+      "requestId": "23272.360",
+      "ts": 1793813214530
+    },
+    {
+      "phase": "response",
+      "url": "https://lovable.dev/assets/castle.umd-BziypBlb.js",
+      "status": 200,
+      "headers": {
+        "content-encoding": "br",
+        "cf-cache-status": "HIT",
+        "age": "74389",
+        "x-content-type-options": "nosniff",
+        "server-timing": "cfExtPri",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "date": "Wed, 04 Nov 2026 17:26:57 GMT",
+        "content-type": "text/javascript; charset=utf-8",
+        "vary": "accept-encoding, Host",
+        "priority": "u=1,i=?0",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "cache-control": "public, max-age=31536000, immutable",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "cf-ray": "a55553a3bc3855b9-JNB",
+        "access-control-allow-origin": "*",
+        "content-length": "185376",
+        "x-deployment-id": "3e183b625ed514c203eb94dffd70ffcb0a7430b424ffc821dcfd7fec3089c543",
+        "server": "cloudflare"
+      },
+      "requestId": "23272.360",
+      "ts": 1793813215443
+    },
+    {
+      "phase": "request",
+      "url": "https://api.lovable.dev/auth/check-auth-provider",
+      "method": "POST",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "x-lov-platform": "{\"platform\":\"web\",\"version\":\"6462f9a33cdfbc0c1494b8365435191a99b15b2c\",\"clientCapabilities\":[\"visual_explanation_v1\",\"board_forms_v1\"]}",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "X-Client-Git-SHA": "6462f9a33cdfbc0c1494b8365435191a99b15b2c",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+        "Content-Type": "application/json"
+      },
+      "postData": "{\"email\":\"recon_212312de@gmail.com\",\"castle_request_token\":\"tprdd-dr|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\"}",
+      "requestId": "23272.483",
+      "ts": 1793813228602
+    },
+    {
+      "phase": "request",
+      "url": "https://api.lovable.dev/auth/check-auth-provider",
+      "method": "OPTIONS",
+      "headers": {
+        "Accept": "*/*",
+        "Access-Control-Request-Headers": "content-type,x-client-git-sha,x-lov-platform",
+        "Access-Control-Request-Method": "POST",
+        "Origin": "https://lovable.dev",
+        "Sec-Fetch-Mode": "cors",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36"
+      },
+      "requestId": "1B4725FFA8F784EFC6608944ED9079E5",
+      "ts": 1793813228604
+    },
+    {
+      "phase": "response",
+      "url": "https://api.lovable.dev/auth/check-auth-provider",
+      "status": 200,
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-headers": "Content-Type, X-Client-Git-Sha, X-Lov-Platform",
+        "access-control-allow-methods": "POST",
+        "access-control-allow-origin": "https://lovable.dev",
+        "access-control-max-age": "86400",
+        "alt-svc": "h3=\":443\"; ma=2592000",
+        "content-length": "0",
+        "date": "Wed, 04 Nov 2026 17:27:12 GMT",
+        "server-timing": "traceparent;desc=\"00-0ec3e0b599a81ebfb4729c04f4bcddd2-0bbd9d3f74f7f87b-01\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Accept-Encoding",
+        "via": "1.1 google",
+        "x-trace-id": "0ec3e0b599a81ebfb4729c04f4bcddd2",
+        "x-trace-sampled": "true"
+      },
+      "requestId": "1B4725FFA8F784EFC6608944ED9079E5",
+      "ts": 1793813228830
+    },
+    {
+      "phase": "response",
+      "url": "https://api.lovable.dev/auth/check-auth-provider",
+      "status": 200,
+      "headers": {
+        "access-control-expose-headers": "Location, Www-Authenticate, Allow, Deprecation, Sunset, Lovable-Version, Lovable-Beta, Content-Length, Content-Disposition, X-Slides-Export-Stale, X-Slides-Export-Version, Lovable-Cachebuster, X-Trace-Id, X-Request-Id, X-Lovable-Unknown-Query-Params, X-Lovable-Unknown-Query-Params-Omitted, Server-Timing, Retry-After, X-Ratelimit-Limit, X-Ratelimit-Remaining, X-Ratelimit-Reset, X-Ratelimit-Scope, Etag",
+        "content-encoding": "br",
+        "x-trace-sampled": "true",
+        "server-timing": "traceparent;desc=\"00-149d10a1af8feb5235ddd33eb4969662-c5917ed54faac4ad-01\"",
+        "alt-svc": "h3=\":443\"; ma=2592000",
+        "date": "Wed, 04 Nov 2026 17:27:12 GMT",
+        "content-type": "application/json",
+        "vary": "Origin,Accept-Encoding",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "access-control-allow-credentials": "true",
+        "x-ratelimit-reset": "1793813532",
+        "x-trace-id": "149d10a1af8feb5235ddd33eb4969662",
+        "x-ratelimit-remaining": "299",
+        "via": "1.1 google",
+        "access-control-allow-origin": "https://lovable.dev",
+        "content-length": "56",
+        "x-ratelimit-limit": "300"
+      },
+      "requestId": "23272.483",
+      "ts": 1793813229368
+    },
+    {
+      "phase": "request",
+      "url": "https://api.lovable.dev/auth/signup",
+      "method": "POST",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "Referer": "",
+        "x-lov-platform": "{\"platform\":\"web\",\"version\":\"6462f9a33cdfbc0c1494b8365435191a99b15b2c\",\"clientCapabilities\":[\"visual_explanation_v1\",\"board_forms_v1\"]}",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "X-Client-Git-SHA": "6462f9a33cdfbc0c1494b8365435191a99b15b2c",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+        "Content-Type": "application/json"
+      },
+      "postData": "{\"email\":\"recon_212312de@gmail.com\",\"password\":\"T3stR3con!456\",\"locale\":\"en\",\"turnstile_token\":\"1.bjwhqI8WjOEa1w7z2AP7NkUJ6f9-1B_KVzATKIYjYjMhFp2wKPrbm_EmUThqpm9p_SrIkQ0uX8dH6q9YT_ofUcNKdSVN02gcKZSlFlMrVgl6XHkx0sOoWD3waDXi5u3uir6D2PjKlkd7VTGz0guhlmcOO7QxNq-5WZVFkibspTlSkpbtc19sTKBuCegO5JM4FMjv6FF23a-k4hc0XqNjlQ0coQKqyPKvqjgM-9MfQXENcyq9Ot_E4yfPV3f3VkeLJKhj9MmQ8ZbwfPUrL_Rr9VxFOVwsmjgmw9iZPyR1B0Qe-Ibk1KGsVBjsPmRneQZ2KE_DF3MHQshSKzWNHP_sax4B30x31NLF7bpiM7S9lxhzSU4ooTHgfDdseAcVF-5ViriOAVCsOt6349U74tk2q1f4ZciygaWB1vIXvNAPKgmTrDD3yL9WZDhHFTMHSFpDKCTCGp6DOglYSpGwz3UB5TgLCaJFtvVEutf4d3DliP9b_PG2WdcwhZQt1dFdqh5UwHJ41OQq8jk15T-yeX3J9FhUlNiyYy-M4MkDoDjhH-F7mCevC7nMcCND8knhT4aibqsOglOpVULdrPgzQ8tqdygTpnK-mgEjannxSHieiaW46woxbvc2PoA5ycETXu2uNmzDX_GIOSWHiGUV9HBbBg.HraXw1ZkRhZ4iw_LH8C-1g.14f708fdc6b97e9f2c7871886d86a0f567dcbc940eaeff77b0876a39562fba99\",\"castle_request_token\":\"tprdd-dr|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\"}",
+      "requestId": "23272.496",
+      "ts": 1793813238036
+    },
+    {
+      "phase": "request",
+      "url": "https://api.lovable.dev/auth/signup",
+      "method": "OPTIONS",
+      "headers": {
+        "Accept": "*/*",
+        "Access-Control-Request-Headers": "content-type,x-client-git-sha,x-lov-platform",
+        "Access-Control-Request-Method": "POST",
+        "Origin": "https://lovable.dev",
+        "Sec-Fetch-Mode": "cors",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36"
+      },
+      "requestId": "420FCC716482FDE7F55DB413A17F2607",
+      "ts": 1793813238037
+    },
+    {
+      "phase": "response",
+      "url": "https://api.lovable.dev/auth/signup",
+      "status": 200,
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-headers": "Content-Type, X-Client-Git-Sha, X-Lov-Platform",
+        "access-control-allow-methods": "POST",
+        "access-control-allow-origin": "https://lovable.dev",
+        "access-control-max-age": "86400",
+        "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+        "content-length": "0",
+        "date": "Wed, 04 Nov 2026 17:27:21 GMT",
+        "server-timing": "traceparent;desc=\"00-0f33a340b4bee1e7305ec6f21613632c-c71ec767c3c26fdc-01\"",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "vary": "Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Accept-Encoding",
+        "via": "1.1 google",
+        "x-trace-id": "0f33a340b4bee1e7305ec6f21613632c",
+        "x-trace-sampled": "true"
+      },
+      "requestId": "420FCC716482FDE7F55DB413A17F2607",
+      "ts": 1793813238267
+    },
+    {
+      "phase": "response",
+      "url": "https://api.lovable.dev/auth/signup",
+      "status": 403,
+      "headers": {
+        "x-request-id": "a43692fbab537f9b02c3ad6a8e8ed279",
+        "access-control-expose-headers": "Location, Www-Authenticate, Allow, Deprecation, Sunset, Lovable-Version, Lovable-Beta, Content-Length, Content-Disposition, X-Slides-Export-Stale, X-Slides-Export-Version, Lovable-Cachebuster, X-Trace-Id, X-Request-Id, X-Lovable-Unknown-Query-Params, X-Lovable-Unknown-Query-Params-Omitted, Server-Timing, Retry-After, X-Ratelimit-Limit, X-Ratelimit-Remaining, X-Ratelimit-Reset, X-Ratelimit-Scope, Etag",
+        "content-encoding": "br",
+        "x-trace-sampled": "true",
+        "server-timing": "traceparent;desc=\"00-a43692fbab537f9b02c3ad6a8e8ed279-196a91c318538957-01\"",
+        "alt-svc": "h3=\":443\"; ma=2592000",
+        "date": "Wed, 04 Nov 2026 17:27:22 GMT",
+        "content-type": "application/json",
+        "vary": "Origin,Accept-Encoding",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "access-control-allow-credentials": "true",
+        "x-ratelimit-reset": "1793813301",
+        "x-trace-id": "a43692fbab537f9b02c3ad6a8e8ed279",
+        "x-ratelimit-remaining": "9",
+        "via": "1.1 google",
+        "access-control-allow-origin": "https://lovable.dev",
+        "content-length": "170",
+        "x-ratelimit-limit": "10"
+      },
+      "requestId": "23272.496",
+      "ts": 1793813238885
+    }
+  ],
+  "bodies": {
+    "23272.12": "import{$ as G,B as jn,H as $n,I as Ft,J as qn,K as Yn,L as f,N as $,P as Jn,Q as Xn,R as T,T as Qn,U as Zn,V as Ye,W as er,_ as tr,et as q,f as Vt,i as ct,j as xe,k as nr,l as lt,m as ut,n as Ht,o as rr,p as ir,r as _,t as re,v as Je,y as Xe}from\"./vendor-firebase-core-ChSZSTvC.js\";try{(function(){var t=typeof window<\"u\"?window:typeof global<\"u\"?global:typeof globalThis<\"u\"?globalThis:typeof self<\"u\"?self:{},e=new t.Error().stack;e&&(t._sentryDebugIds=t._sentryDebugIds||{},t._sentryDebugIds[e]=\"ce51f1b7-6abb-4c39-95a0-07b1663c9075\",t._sentryDebugIdIdentifier=\"sentry-dbid-ce51f1b7-6abb-4c39-95a0-07b1663c9075\")})()}catch{}function xt(){return{\"dependent-sdk-initialized-before-auth\":\"Another Firebase SDK was initialized and is trying to use Auth before Auth is initialized. Please be sure to call `initializeAuth` or `getAuth` before starting any other Firebase SDK.\"}}var sr=xt,Wt=new Je(\"auth\",\"Firebase\",xt()),Xs={ADMIN_ONLY_OPERATION:\"auth/admin-restricted-operation\",ARGUMENT_ERROR:\"auth/argument-error\",APP_NOT_AUTHORIZED:\"auth/app-not-authorized\",APP_NOT_INSTALLED:\"auth/app-not-installed\",CAPTCHA_CHECK_FAILED:\"auth/captcha-check-failed\",CODE_EXPIRED:\"auth/code-expired\",CORDOVA_NOT_READY:\"auth/cordova-not-ready\",CORS_UNSUPPORTED:\"auth/cors-unsupported\",CREDENTIAL_ALREADY_IN_USE:\"auth/credential-already-in-use\",CREDENTIAL_MISMATCH:\"auth/custom-token-mismatch\",CREDENTIAL_TOO_OLD_LOGIN_AGAIN:\"auth/requires-recent-login\",DEPENDENT_SDK_INIT_BEFORE_AUTH:\"auth/dependent-sdk-initialized-before-auth\",DYNAMIC_LINK_NOT_ACTIVATED:\"auth/dynamic-link-not-activated\",EMAIL_CHANGE_NEEDS_VERIFICATION:\"auth/email-change-needs-verification\",EMAIL_EXISTS:\"auth/email-already-in-use\",EMULATOR_CONFIG_FAILED:\"auth/emulator-config-failed\",EXPIRED_OOB_CODE:\"auth/expired-action-code\",EXPIRED_POPUP_REQUEST:\"auth/cancelled-popup-request\",INTERNAL_ERROR:\"auth/internal-error\",INVALID_API_KEY:\"auth/invalid-api-key\",INVALID_APP_CREDENTIAL:\"auth/invalid-app-credential\",INVALID_APP_ID:\"auth/invalid-app-i",
+    "23272.21": "try{(function(){var e=typeof window<\"u\"?window:typeof global<\"u\"?global:typeof globalThis<\"u\"?globalThis:typeof self<\"u\"?self:{},t=new e.Error().stack;t&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[t]=\"211da090-0fd5-401b-adf4-a0ee1dc10874\",e._sentryDebugIdIdentifier=\"sentry-dbid-211da090-0fd5-401b-adf4-a0ee1dc10874\")})()}catch{}var le=()=>{},A={NODE_CLIENT:!1,NODE_ADMIN:!1,SDK_VERSION:\"${JSCORE_VERSION}\"},de=function(e,t){if(!e)throw fe(t)},fe=function(e){return new Error(\"Firebase Database (\"+A.SDK_VERSION+\") INTERNAL ASSERT FAILED: \"+e)},X=function(e){const t=[];let r=0;for(let n=0;n<e.length;n++){let i=e.charCodeAt(n);i<128?t[r++]=i:i<2048?(t[r++]=i>>6|192,t[r++]=i&63|128):(i&64512)===55296&&n+1<e.length&&(e.charCodeAt(n+1)&64512)===56320?(i=65536+((i&1023)<<10)+(e.charCodeAt(++n)&1023),t[r++]=i>>18|240,t[r++]=i>>12&63|128,t[r++]=i>>6&63|128,t[r++]=i&63|128):(t[r++]=i>>12|224,t[r++]=i>>6&63|128,t[r++]=i&63|128)}return t},ue=function(e){const t=[];let r=0,n=0;for(;r<e.length;){const i=e[r++];if(i<128)t[n++]=String.fromCharCode(i);else if(i>191&&i<224){const s=e[r++];t[n++]=String.fromCharCode((i&31)<<6|s&63)}else if(i>239&&i<365){const s=e[r++],a=e[r++],h=e[r++],o=((i&7)<<18|(s&63)<<12|(a&63)<<6|h&63)-65536;t[n++]=String.fromCharCode(55296+(o>>10)),t[n++]=String.fromCharCode(56320+(o&1023))}else{const s=e[r++],a=e[r++];t[n++]=String.fromCharCode((i&15)<<12|(s&63)<<6|a&63)}}return t.join(\"\")},Q={byteToCharMap_:null,charToByteMap_:null,byteToCharMapWebSafe_:null,charToByteMapWebSafe_:null,ENCODED_VALS_BASE:\"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789\",get ENCODED_VALS(){return this.ENCODED_VALS_BASE+\"+/=\"},get ENCODED_VALS_WEBSAFE(){return this.ENCODED_VALS_BASE+\"-_.\"},HAS_NATIVE_SUPPORT:typeof atob==\"function\",encodeByteArray(e,t){if(!Array.isArray(e))throw Error(\"encodeByteArray takes an array as a parameter\");this.init_();const r=t?this.byteToCharMapWebSafe_:this.byteToCharMap_,n=[];for(let i=0;i<e.length;i+=3){const s=e[i],a=i+1",
+    "23272.360": "import{t as X3n}from\"./rolldown-runtime-CSz5w8F5.js\";try{(function(){var gw=typeof window<\"u\"?window:typeof global<\"u\"?global:typeof globalThis<\"u\"?globalThis:typeof self<\"u\"?self:{},ds=new gw.Error().stack;ds&&(gw._sentryDebugIds=gw._sentryDebugIds||{},gw._sentryDebugIds[ds]=\"6f0e588e-9921-413b-9171-05b350088b38\",gw._sentryDebugIdIdentifier=\"sentry-dbid-6f0e588e-9921-413b-9171-05b350088b38\")})()}catch{}var I3n=X3n(((gw,ds)=>{(function(P8,E){typeof gw==\"object\"&&typeof ds<\"u\"?E(gw):typeof define==\"function\"&&define.amd?define([\"exports\"],E):E((P8=typeof globalThis<\"u\"?globalThis:P8||self)[\"@castleio/castle-js\"]={})})(gw,function(P8){\"use strict\";function E(n){if(n in Jm)return Jm[n];var r,o,a,u=[],v=0,d=0;for(r=0;r<n.length;r++){if(65>(o=n.charCodeAt(r))||o>90)if(97>o||o>122)if(48>o||o>57)if(o===43)a=62;else{if(o!==47)continue;a=63}else a=o+4;else a=o-71;else a=o-65;v=(v&(1<<d)-1)<<6|a,8>(d+=6)||(d-=8,u.push(v>>d&255))}var D,C,P=[];for(r=0;r<u.length;)C=128>(D=u[r++])?D:224>D?(31&D)<<6|63&u[r++]:(15&D)<<12|(63&u[r++])<<6|63&u[r++],P.push(C);var z=[].join();for(r=0;r<P.length;r+=8192)z+=n.constructor.fromCharCode.apply(null,P.slice(r,r+8192));return Jm[n]=z,z}function q5(n,r,o,a,u,v){return qf[n][e](r[32],o[a][u][v])}function yu(n,r,o,a){return n&dn^r>>>o&dn^a}function A1(n,r,o,a,u,v,d){return i(_t,n[r],o[a],u,v,d)}function x2(n,r,o,a){return n[r][AO](o,a,q,q)}function Cn(n,r,o,a){return n[r][o]===a}function N2(n,r,o,a){return c(cn,n[2],r[2],o[2],a)}function ze(n,r,o,a,u,v){return c(n,r[o],a,u,v)}function z8(n){return c(Dn,n[20],Sv,z1,M,w)}function Qi(n,r){return n[17][r[16]]}function Vy(n,r,o,a,u,v,d){return qf[n][e](r[32],o[a][u][v][d])}function ry(n,r,o,a,u,v){return c(E0,n[r],o,a[u],v,t)}function Br(n,r,o){return(n[1]^r)+o}function Ei(n,r){return n[0][r[15]]}function Y0(n,r){return n[16][r[15]]}function Cs(n){return c(Hn,n[26],t,w,M,y)}function Ot(n,r){return n[0][r]}function pt(n,r,o,a,u){return n[r][o](a[u])}function B0(n,r){return n[0][r[14]]}function ut(n,r,o",
+    "23272.483": "{\"providers\":[],\"user_exists\":false,\"require_sso\":false}\n",
+    "23272.496": "{\"status\":403,\"type\":\"signup_blocked\",\"title\":\"Registration denied due to suspicious activity. Contact support if you believe this is a mistake.\",\"message\":\"Registration denied due to suspicious activity. Contact support if you believe this is a mistake.\",\"details\":\"\",\"request_id\":\"a43692fbab537f9b02c3ad6a8e8ed279\"}\n"
+  },
+  "page_state": {
+    "has_password_field": true,
+    "has_otp_field": false,
+    "error_text": null,
+    "url": "https://lovable.dev/signup",
+    "body_snippet": "We use cookies to enhance your development experience and keep your data secure. Privacy Policy · Cookie Policy\nManage preferences\nOK\nCreate your account\nContinue with Google\nContinue with GitHub\nContinue with Apple\nOR\nEmail\nEdit\n\nPassword\n\nPassword\n\nPassword must contain\n\nat least 8 characters\na number (0-9)\nCreate your account\nAlready have an account? Log in\nBy signing up, you agree to our Terms of Service and Privacy Policy.\nSSO available on Business and Enterprise plans"
+  }
+}

@@ -1,0 +1,128 @@
+============================================================
+    ASSISTENTE LOVABLE - COM DELAY E ESCALA 100% PADRÃO     
+============================================================
+ - Visualização: 100% normal (sem zoom artificial)
+ - Delays de segurança adicionados
+ - Filtro para capturar APENAS o link recém-enviado
+
+[GMAIL] Testando autenticação com o Gmail...
+[GMAIL] Conectado com sucesso (developermax2maker@gmail.com)!
+
+Contas configuradas:
+ [1] Eugênio (Você) -> eugenio@obsidien.online
+ [2] Marta (Esposa) -> marta@obsidien.online
+ [3] Alfredo (Filho) -> alfredo@obsidien.online
+ [4] Dino -> dino@obsidien.online
+ [5] Cadastrar todas as 4 contas fixas em sequência
+ [6] Digitar um E-MAIL PERSONALIZADO manualmente
+ [7] Gerar e cadastrar E-MAILS ALEATÓRIOS (Você escolhe a quantidade)
+ [0] Sair
+------------------------------------------------------------
+
+============================================================
+>>> GERADOR DE E-MAILS ALTAMENTE ALEATÓRIOS
+============================================================
+
+[OK] 3 contas geradas com sucesso (sem repetições):
+ [1] Thiago Cardoso -> thiagocardoso@obsidien.online
+ [2] Enzo Barbosa -> enzobarbosa@obsidien.online
+ [3] Felipe Teixeira -> felipeteixeira@obsidien.online
+
+Iniciando Google Chrome normal (processo independente)...
+[CHROME] Abrindo Chrome normal (perfil: C:\Users\SHADEZ~1\AppData\Local\Temp\chrome_temp_1792928336456_660852, porta debug: 9572)...
+[CHROME] Conectado via CDP com sucesso! Perfil: C:\Users\SHADEZ~1\AppData\Local\Temp\chrome_temp_1792928336456_660852
+
+============================================================
+>>> PROCESSANDO CONTA: Thiago Cardoso
+>>> E-MAIL: thiagocardoso@obsidien.online
+>>> SENHA ALEATÓRIA GERADA: dB5R!f7dVc%K
+============================================================
+[IMAP] Verificando estado inicial da caixa para thiagocardoso@obsidien.online...
+[IMAP] Maior UID anterior: Geral = 6874 | Conta = 0
+[rebrowser-patches][FrameManager] initialize
+[rebrowser-patches] onFrameNavigated, navigationType = Navigation, id = CAA9E207E9AEB8599D19B3683AC1D15B, url = about:blank
+
+[1/6] Acessando a página de login do Lovable (escala normal 100%)...
+[rebrowser-patches] onFrameNavigated, navigationType = Navigation, id = CAA9E207E9AEB8599D19B3683AC1D15B, url = https://lovable.dev/signup
+[rebrowser-patches] onFrameNavigated, navigationType = Navigation, id = 44B0C7542AE89DB8C76113B12F2A81C0, url = about:blank
+[rebrowser-patches] onFrameNavigated, navigationType = Navigation, id = FF01FB5BE5E15CD56EA2587B47AB508C, url = about:blank
+[rebrowser-patches] onFrameNavigated, navigationType = Navigation, id = 6F0336B9B5F4F6788856CFBC7A128523, url = about:blank
+[rebrowser-patches][WebWorker] initialize other B002F8D097DFB1C71D2568BC2F51AA04
+[rebrowser-patches][WebWorker] initialize other 4F13D18BCF52476FCE8804C9AC92E22E
+
+[ERRO] Falha ao processar thiagocardoso@obsidien.online (tentativa 1/2): Navigation timeout of 30000 ms exceeded
+[rebrowser-patches][FrameManager] initialize
+[rebrowser-patches] onFrameNavigated, navigationType = Navigation, id = 02787A6DB709522D884B1400F1DE87B8, url = 
+[rebrowser-patches] onFrameNavigated, navigationType = Navigation, id = 02787A6DB709522D884B1400F1DE87B8, url = https://17201866.fls.doubleclick.net/activityi;dc_pre=CKi-rNaK1ZcDFfgLHgAdOQUxig;src=17201866;type=visit0;cat=lovab0;rcb=3;ord=8202894095760;npa=1;auiddc=1607238359.1792928361;uaa=x86;uab=64;uafvl=Google%2520Chrome%3B155.0.8059.85%7CChromium%3B155.0.8059.85%7CNot(A%253ABrand%3B24.0.0.0;uamb=0;uam=;uap=Windows;uapv=19.0.0;uaw=0;pscdl=noapi;frm=0;_tu=IFA;gtm=45fe6al1v9254679120za200zb9201337976zd9201337976xecxf1;gcs=G111;gcd=13r3r3r3r7l1;dma=0;dc_fmt=2;tag_exp=115616985~115938465~115938469~118131808~118897920~118897930~119860442~120213116~120385423~120469145~120469153~121246026~121246034;epver=2;dc_random=1792928370_Q3Gb2XycZAIEBi7TZNv9h44R4Xe3xrIQlA;_dc_test=1;~oref=https%3A%2F%2Flovable.dev%2Fsignup?
+[rebrowser-patches] onFrameNavigated, navigationType = Navigation, id = 53C5A315CEF008B912EE4F3A6E7A8885, url = about:blank
+
+============================================================
+>>> PROCESSANDO CONTA: Thiago Cardoso
+>>> E-MAIL: thiagocardoso@obsidien.online
+>>> SENHA ALEATÓRIA GERADA: dB5R!f7dVc%K
+============================================================
+[IMAP] Verificando estado inicial da caixa para thiagocardoso@obsidien.online...
+[rebrowser-patches][FrameManager] initialize
+[rebrowser-patches] onFrameNavigated, navigationType = Navigation, id = 3F2C95B85CBBAD7BA83610998F2845EE, url = 
+[rebrowser-patches] onFrameNavigated, navigationType = Navigation, id = 3F2C95B85CBBAD7BA83610998F2845EE, url = https://match.adsrvr.org/track/cei?advertiser_id=tz1tlsd&cookie_sync=1&upv=3.0.0&upid=93pyrfx&ref=https%3a%2f%2flovable.dev&redirect=1
+[rebrowser-patches] onFrameNavigated, navigationType = Navigation, id = 67F4E5AF6035EE0003F5B0FA8910BE93, url = https://match.adsrvr.org/track/cmf/google?g_uuid=&gdpr=0&gdpr_consent=&ttd_tdid=4855f425-6efb-4d21-8b72-572a824cabfc&google_gid=CAESELCNBcf1JPCYNQkyjWMfPvY&google_cver=1
+[rebrowser-patches] onFrameNavigated, navigationType = Navigation, id = F96E578F8133322DA90FCFD4502FA908, url = https://match.adsrvr.org/track/cmf/rubicon?gdpr=0
+[rebrowser-patches] onFrameNavigated, navigationType = Navigation, id = DE4A1D9A41E2D3C8642A116F20EEAE15, url = https://match.adsrvr.org/track/cmf/appnexus?ttd=1&anid=4230812024934171462&ttd_tdid=4855f425-6efb-4d21-8b72-572a824cabfc
+[IMAP] Maior UID anterior: Geral = 6874 | Conta = 0
+
+[ERRO] Falha ao processar thiagocardoso@obsidien.online (tentativa 2/2): Connection closed.
+
+[LOTE] Aguardando 40s antes da próxima conta (2/3)...
+
+============================================================
+>>> PROCESSANDO CONTA: Enzo Barbosa
+>>> E-MAIL: enzobarbosa@obsidien.online
+>>> SENHA ALEATÓRIA GERADA: Ear*9*9e$9P6
+============================================================
+[IMAP] Verificando estado inicial da caixa para enzobarbosa@obsidien.online...
+[IMAP] Maior UID anterior: Geral = 6874 | Conta = 0
+
+[ERRO] Falha ao processar enzobarbosa@obsidien.online (tentativa 1/2): Connection closed.
+
+============================================================
+>>> PROCESSANDO CONTA: Enzo Barbosa
+>>> E-MAIL: enzobarbosa@obsidien.online
+>>> SENHA ALEATÓRIA GERADA: Ear*9*9e$9P6
+============================================================
+[IMAP] Verificando estado inicial da caixa para enzobarbosa@obsidien.online...
+[IMAP] Maior UID anterior: Geral = 6874 | Conta = 0
+
+[ERRO] Falha ao processar enzobarbosa@obsidien.online (tentativa 2/2): Connection closed.
+
+[LOTE] Aguardando 19s antes da próxima conta (3/3)...
+
+============================================================
+>>> PROCESSANDO CONTA: Felipe Teixeira
+>>> E-MAIL: felipeteixeira@obsidien.online
+>>> SENHA ALEATÓRIA GERADA: V28TcaH@Z8X$
+============================================================
+[IMAP] Verificando estado inicial da caixa para felipeteixeira@obsidien.online...
+[IMAP] Maior UID anterior: Geral = 6874 | Conta = 0
+
+[ERRO] Falha ao processar felipeteixeira@obsidien.online (tentativa 1/2): Connection closed.
+
+============================================================
+>>> PROCESSANDO CONTA: Felipe Teixeira
+>>> E-MAIL: felipeteixeira@obsidien.online
+>>> SENHA ALEATÓRIA GERADA: V28TcaH@Z8X$
+============================================================
+[IMAP] Verificando estado inicial da caixa para felipeteixeira@obsidien.online...
+[IMAP] Maior UID anterior: Geral = 6874 | Conta = 0
+
+[ERRO] Falha ao processar felipeteixeira@obsidien.online (tentativa 2/2): Connection closed.
+
+============================================================
+ LOTE FINALIZADO 
+============================================================
+[OK] Sucesso: 0/3
+[FALHA] 3 conta(s) não concluída(s):
+   - thiagocardoso@obsidien.online: Connection closed.
+   - enzobarbosa@obsidien.online: Connection closed.
+   - felipeteixeira@obsidien.online: Connection closed.
+============================================================
+

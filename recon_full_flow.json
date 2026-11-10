@@ -1,0 +1,45 @@
+{
+  "email": "codiexedosaswa1@outlook.com",
+  "password": "Lov_p3dn5AFA!1",
+  "elapsed": "117.0",
+  "signup": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJmaXJlYmFzZS1hZG1pbnNkay10aGZqNUBncHQtZW5naW5lZXItMzkwNjA3LmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9pZGVudGl0eXRvb2xraXQuZ29vZ2xlYXBpcy5jb20vZ29vZ2xlLmlkZW50aXR5LmlkZW50aXR5dG9vbGtpdC52MS5JZGVudGl0eVRvb2xraXQiLCJleHAiOjE3OTM4NTU3MTIsImlhdCI6MTc5Mzg1MjExMiwic3ViIjoiZmlyZWJhc2UtYWRtaW5zZGstdGhmajVAZ3B0LWVuZ2luZWVyLTM5MDYwNy5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbSIsInVpZCI6Im1sY0hjRlhpc0FQc1Rjc2lLNVdkRjRsS2JHZDIiLCJjbGFpbXMiOnsibG9naW5fc2Vzc2lvbl9pZCI6ImQ4OWI1NTlhLTU1MjItNGUwMi1hMGI0LWIzN2M2NDY3Y2RkYSIsImxvdmFibGVfcHJvdmlzaW9uZWRfZW1haWwiOiJjb2RpZXhlZG9zYXN3YTFAb3V0bG9vay5jb20iLCJsb3ZhYmxlX3VzZXJfcHJvdmlzaW9uaW5nIjoiMjAyNi0wMy0wMiIsInNvdXJjZV9zaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.Yh4zbZTOiShvsz_-A0bB2wcGCWUW1oBbcu2ab1g9GwVDDez-dkkBIbbgoEPJS00a2nDBfhnQZL9oA4Zu2FqNVvlaBExiZs1akRaiQ63J0t0n3DImGUBOjxFmvnbkD1Hz71xh8DkYEOwV8arrCdCBFsU4QN8QQZpWY2IZTWZGDgbAx9id2-7qIyrz8uYx_GkfBUnt7Vr3mqaUOUMobnBZPILpvOOVLXcuHZpKW_LlB2I5PavL_Pjt88ayyP2uU66SE1RyZUF_fqgRsdapNw4xqUBAJnx2L_OXNaC3fHnLXu3lqW0qutKaW6hxuyfJ1YdzcQuEvaY1Gj54ub7F2zPW7A",
+  "login1": true,
+  "verify": "oobCode",
+  "login2": true,
+  "profile": {
+    "status": 405,
+    "body": ""
+  },
+  "projects": {
+    "status": 404,
+    "body": "404 page not found\n"
+  },
+  "onboarding": {
+    "/user/onboarding": {
+      "status": 405,
+      "body": ""
+    },
+    "/user/profile": {
+      "status": 405,
+      "body": ""
+    },
+    "/user": {
+      "status": 404,
+      "body": "404 page not found\n"
+    }
+  },
+  "remix": {
+    "/projects/{id}/remix": {
+      "status": 404,
+      "body": "404 page not found\n"
+    },
+    "/projects/remix": {
+      "status": 405,
+      "body": ""
+    },
+    "/projects/fork": {
+      "status": 405,
+      "body": ""
+    }
+  }
+}

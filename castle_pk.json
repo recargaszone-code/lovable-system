@@ -1,0 +1,17 @@
+{
+  "keys": [
+    "pk_TaKsqF94pjCsoyepV6mH3V24AXoM6A7M"
+  ],
+  "bundle_hits": [
+    {
+      "url": "https://lovable.dev/assets/app-shared-rm6ljTeo.js",
+      "key": "pk_TaKsqF94pjCsoyepV6mH3V24AXoM6A7M"
+    },
+    {
+      "url": "https://lovable.dev/assets/app-shared-rm6ljTeo.js",
+      "key": "pk_TaKsqF94pjCsoyepV6mH3V24AXoM6A7M"
+    }
+  ],
+  "castle_config": {},
+  "extracted_at": "2026-11-04T17:06:38.253Z"
+}

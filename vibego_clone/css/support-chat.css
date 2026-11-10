@@ -1,0 +1,595 @@
+/* VibeGO Conect — Official Support Chatbot */
+:root {
+  --vb-chat-bg: #08090a;
+  --vb-chat-surface: #121517;
+  --vb-chat-header: #181d1f;
+  --vb-chat-border: rgba(255, 255, 255, 0.12);
+  --vb-chat-border-light: rgba(255, 255, 255, 0.07);
+  --vb-chat-text: #f3f2ee;
+  --vb-chat-muted: #9ca39f;
+  --vb-chat-subtle: #6e7672;
+  --vb-chat-accent: #c8d2c2;
+  --vb-chat-accent-hover: #dbe3d6;
+  --vb-chat-bubble-bot: #15191b;
+  --vb-chat-bubble-user: #222b26;
+  --vb-chat-bubble-user-border: rgba(200, 210, 194, 0.22);
+  --vb-chat-code-bg: #070909;
+  --vb-chat-code-border: rgba(255, 255, 255, 0.08);
+}
+
+/* 1. BOTÃO FLUTUANTE DE SUPORTE */
+#vibego-chat-trigger {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--vb-chat-surface);
+  border: 1px solid var(--vb-chat-border);
+  color: var(--vb-chat-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.65);
+  z-index: 80;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), background 0.2s, border-color 0.2s;
+  padding: 0;
+  outline: none;
+}
+
+#vibego-chat-trigger:hover {
+  transform: translateY(-2px) scale(1.04);
+  background: #1a2022;
+  border-color: rgba(200, 210, 194, 0.4);
+}
+
+#vibego-chat-trigger:focus-visible {
+  outline: 2px solid var(--vb-chat-accent);
+  outline-offset: 4px;
+}
+
+#vibego-chat-trigger svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform 0.2s ease;
+}
+
+.vb-chat-badge-dot {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 9px;
+  height: 9px;
+  background: #739f6f;
+  border: 2px solid var(--vb-chat-surface);
+  border-radius: 50%;
+}
+
+/* 2. JANELA DE CONVERSA */
+#vibego-chat-window {
+  position: fixed;
+  bottom: 88px;
+  right: 24px;
+  width: 380px;
+  height: 540px;
+  max-height: calc(100vh - 110px);
+  background: var(--vb-chat-bg);
+  border: 1px solid var(--vb-chat-border);
+  border-radius: 14px;
+  box-shadow: 0 28px 75px rgba(0, 0, 0, 0.85);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 85;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(14px) scale(0.97);
+  transition: opacity 0.22s cubic-bezier(0.16, 1, 0.3, 1), transform 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  font-family: inherit;
+}
+
+#vibego-chat-window.vb-open {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0) scale(1);
+}
+
+/* 3. CABEÇALHO DO CHAT */
+.vb-chat-header {
+  padding: 14px 16px;
+  background: var(--vb-chat-header);
+  border-bottom: 1px solid var(--vb-chat-border-light);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.vb-chat-header-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.vb-chat-title {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+  color: var(--vb-chat-text);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.vb-chat-status {
+  font-size: 11px;
+  color: var(--vb-chat-muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+}
+
+.vb-chat-status::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #739f6f;
+}
+
+.vb-chat-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.vb-chat-header-btn {
+  background: none;
+  border: 0;
+  color: var(--vb-chat-muted);
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.15s, background 0.15s;
+}
+
+.vb-chat-header-btn:hover {
+  color: var(--vb-chat-text);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.vb-chat-header-btn svg {
+  width: 16px;
+  height: 16px;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  fill: none;
+}
+
+/* 4. ÁREA DE MENSAGENS */
+.vb-chat-body {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background: radial-gradient(circle at 50% 0%, rgba(200, 210, 194, 0.03), transparent 70%);
+}
+
+.vb-chat-body::-webkit-scrollbar {
+  width: 5px;
+}
+.vb-chat-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+.vb-chat-body::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+/* 5. BALÕES DE MENSAGEM */
+.vb-msg {
+  display: flex;
+  flex-direction: column;
+  max-width: 88%;
+  font-size: 13.5px;
+  line-height: 1.55;
+  word-wrap: break-word;
+  animation: vbFadeIn 0.2s ease-out;
+}
+
+@keyframes vbFadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.vb-msg.vb-bot {
+  align-self: flex-start;
+  background: var(--vb-chat-bubble-bot);
+  border: 1px solid var(--vb-chat-border-light);
+  color: var(--vb-chat-text);
+  padding: 12px 14px;
+  border-radius: 10px 10px 10px 2px;
+}
+
+.vb-msg.vb-user {
+  align-self: flex-end;
+  background: var(--vb-chat-bubble-user);
+  border: 1px solid var(--vb-chat-bubble-user-border);
+  color: #f7f9f6;
+  padding: 10px 13px;
+  border-radius: 10px 10px 2px 10px;
+}
+
+.vb-msg p {
+  margin: 0 0 8px 0;
+}
+.vb-msg p:last-child {
+  margin-bottom: 0;
+}
+
+.vb-msg a {
+  color: var(--vb-chat-accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.15s;
+}
+.vb-msg a:hover {
+  color: var(--vb-chat-accent-hover);
+}
+
+.vb-msg code {
+  font-family: 'JetBrains Mono', Consolas, Monaco, monospace;
+  font-size: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 2px 5px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #e5ede2;
+}
+
+.vb-code-container {
+  position: relative;
+  background: var(--vb-chat-code-bg);
+  border: 1px solid var(--vb-chat-code-border);
+  border-radius: 6px;
+  margin: 8px 0;
+  overflow: hidden;
+}
+
+.vb-code-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 4px 10px;
+  font-size: 10px;
+  color: var(--vb-chat-subtle);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.vb-code-copy-btn {
+  background: none;
+  border: 0;
+  color: var(--vb-chat-muted);
+  cursor: pointer;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.vb-code-copy-btn:hover {
+  color: var(--vb-chat-text);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.vb-code-container pre {
+  margin: 0;
+  padding: 10px 12px;
+  overflow-x: auto;
+  font-family: 'JetBrains Mono', Consolas, Monaco, monospace;
+  font-size: 11.5px;
+  line-height: 1.5;
+  color: #e1e7dd;
+}
+.vb-code-container pre code {
+  background: none;
+  padding: 0;
+  border: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+/* 6. SUGESTÕES RÁPIDAS (PILLS) */
+.vb-chat-pills {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.vb-chat-pill {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--vb-chat-border-light);
+  color: var(--vb-chat-muted);
+  font-size: 12px;
+  padding: 8px 11px;
+  border-radius: 6px;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.vb-chat-pill:hover {
+  background: rgba(200, 210, 194, 0.08);
+  border-color: rgba(200, 210, 194, 0.25);
+  color: var(--vb-chat-text);
+  transform: translateX(2px);
+}
+
+.vb-chat-pill-arrow {
+  color: var(--vb-chat-subtle);
+  font-size: 11px;
+}
+
+/* 7. INDICADOR DE DIGITAÇÃO */
+.vb-typing-indicator {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 10px 14px;
+  background: var(--vb-chat-bubble-bot);
+  border: 1px solid var(--vb-chat-border-light);
+  border-radius: 10px 10px 10px 2px;
+  align-self: flex-start;
+  width: fit-content;
+}
+
+.vb-typing-dot {
+  width: 5px;
+  height: 5px;
+  background: var(--vb-chat-accent);
+  border-radius: 50%;
+  opacity: 0.4;
+  animation: vbPulse 1.2s infinite ease-in-out;
+}
+.vb-typing-dot:nth-child(2) { animation-delay: 0.2s; }
+.vb-typing-dot:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes vbPulse {
+  0%, 100% { opacity: 0.3; transform: scale(0.9); }
+  50% { opacity: 1; transform: scale(1.15); }
+}
+
+/* 8. RODAPÉ DE ENTRADA */
+.vb-chat-footer {
+  padding: 12px 14px;
+  background: var(--vb-chat-header);
+  border-top: 1px solid var(--vb-chat-border-light);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.vb-chat-form {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--vb-chat-bg);
+  border: 1px solid var(--vb-chat-border);
+  border-radius: 8px;
+  padding: 4px 6px 4px 12px;
+  transition: border-color 0.15s;
+}
+
+.vb-chat-form:focus-within {
+  border-color: rgba(200, 210, 194, 0.45);
+}
+
+.vb-chat-input {
+  flex: 1;
+  background: none;
+  border: 0;
+  outline: none;
+  color: var(--vb-chat-text);
+  font-size: 13.5px;
+  padding: 8px 0;
+  font-family: inherit;
+}
+
+.vb-chat-input::placeholder {
+  color: var(--vb-chat-subtle);
+  font-size: 12.5px;
+}
+
+.vb-chat-send-btn {
+  background: var(--vb-chat-text);
+  border: 0;
+  color: #111415;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+  padding: 0;
+}
+
+.vb-chat-send-btn:hover:not(:disabled) {
+  background: var(--vb-chat-accent);
+  transform: scale(1.05);
+}
+
+.vb-chat-send-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.vb-chat-send-btn svg {
+  width: 14px;
+  height: 14px;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  fill: none;
+}
+
+.vb-chat-human-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--vb-chat-subtle);
+  padding: 0 4px;
+}
+
+.vb-chat-human-link {
+  color: var(--vb-chat-muted);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: color 0.15s;
+}
+
+.vb-chat-human-link:hover {
+  color: var(--vb-chat-accent);
+}
+
+/* 9. ADAPTAÇÃO MOBILE */
+@media (max-width: 767px) {
+  #vibego-chat-trigger {
+    bottom: 20px;
+    right: 20px;
+    width: 48px;
+    height: 48px;
+  }
+
+  #vibego-chat-window {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 100dvh;
+    border-radius: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+  .vb-chat-header {
+    padding: 16px;
+  }
+
+  .vb-chat-input {
+    font-size: 16px; /* Evita zoom automático no iOS */
+  }
+
+  .vb-chat-send-btn {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+/* Unified mascot and readable support panel. */
+#vibego-chat-trigger {
+  right: 24px;
+  bottom: max(22px, env(safe-area-inset-bottom));
+  width: auto;
+  min-width: 240px;
+  height: 76px;
+  padding: 10px 104px 10px 22px;
+  border-radius: 20px;
+  border: 1px solid #c8d2c25e;
+  background: linear-gradient(135deg, #263123, #141b15);
+  box-shadow: 0 14px 44px #0008, 0 0 28px #c8d2c216;
+  text-align: left;
+  overflow: visible;
+}
+.vb-launcher-copy { display: flex; flex-direction: column; gap: 3px; }
+.vb-launcher-copy strong { color: #f3f2ee; font-size: 16px; line-height: 1.4; font-weight: 600; }
+.vb-launcher-copy > span { color: #c1ccba; font-size: 13px; line-height: 1.4; }
+.vb-launcher-mascot { position: absolute; right: 2px; bottom: 0; width: 100px; height: 100px; object-fit: contain; pointer-events: none; filter: drop-shadow(0 4px 6px #0004); }
+body.vb-support-open #vibego-chat-trigger { opacity: 0; visibility: hidden; pointer-events: none; }
+#vibego-chat-window {
+  right: 24px;
+  bottom: max(24px, env(safe-area-inset-bottom));
+  width: 420px;
+  height: 640px;
+  max-height: calc(100dvh - 48px);
+  border-radius: 22px;
+  border-color: #c8d2c23b;
+  box-shadow: 0 28px 90px #000b;
+}
+.vb-chat-header { min-height: 92px; padding: 14px 16px 14px 10px; gap: 8px; background: linear-gradient(120deg, #293326, #172017); }
+.vb-header-mascot { width: 60px; height: 60px; object-fit: contain; flex-shrink: 0; }
+.vb-chat-header-info { flex: 1; min-width: 0; }
+.vb-chat-title { font-size: 16px; line-height: 1.4; margin: 0; letter-spacing: -.3px; }
+.vb-chat-status { font-size: 13px; line-height: 1.5; color: #c2cebb; }
+.vb-chat-status::before { display: none; }
+.vb-chat-header-actions { gap: 2px; }
+.vb-chat-header-btn { width: 40px; height: 40px; min-width: 40px; border-radius: 10px; color: #d9e1d4; }
+.vb-chat-header-btn:disabled { opacity: .4; cursor: wait; }
+.vb-chat-body { padding: 20px 18px; gap: 16px; min-height: 0; overscroll-behavior: contain; scrollbar-width: thin; scrollbar-color: #687760 #121713; }
+.vb-msg { max-width: 94%; font-size: 15px; line-height: 1.65; overflow-wrap: anywhere; }
+.vb-msg.vb-bot { padding: 16px; border-radius: 14px 14px 14px 4px; }
+.vb-msg.vb-user { padding: 12px 16px; border-radius: 14px 14px 4px 14px; }
+.vb-chat-pills { gap: 9px; margin-top: 14px; }
+.vb-chat-pill { min-height: 44px; font-size: 14px; line-height: 1.4; gap: 12px; padding: 10px 12px; color: #d1dbca; border-radius: 9px; }
+.vb-chat-pill-arrow { display: inline-flex; color: #bdccb4; }
+.vb-chat-pill .vg-icon { width: 17px; height: 17px; flex-basis: 17px; }
+.vb-chat-footer { padding: 16px; gap: 14px; background: #141b15; }
+.vb-chat-form { padding: 6px 6px 6px 12px; border-radius: 12px; gap: 6px; }
+.vb-chat-input { min-width: 0; font-size: 16px; line-height: 1.5; padding: 8px 0; }
+.vb-chat-input::placeholder { font-size: 14px; color: #aeb9a8; }
+.vb-chat-send-btn { width: 44px; height: 44px; flex-shrink: 0; border-radius: 9px; background: #d6e1ce; }
+.vb-chat-send-btn svg { width: 20px; height: 20px; }
+.vb-chat-human-option { flex-wrap: wrap; gap: 4px 12px; font-size: 12px; color: #aab8a3; }
+.vb-chat-human-link { min-height: 32px; color: #d6e4cb; font-size: 13px; }
+.vb-chat-human-link .vg-icon { width: 16px; height: 16px; flex-basis: 16px; }
+.vb-code-header, .vb-code-copy-btn { font-size: 12px; color: #bfcdb7; }
+.vb-code-copy-btn { min-height: 36px; }
+.vb-code-container pre, .vb-msg code { font-size: 13px; }
+.vb-code-container { max-width: 100%; }
+#vibego-chat-window button:focus-visible, #vibego-chat-window a:focus-visible { outline: 2px solid #c8d2c2; outline-offset: 2px; }
+@media (max-width: 767px) {
+  #vibego-chat-trigger { right: 16px; bottom: calc(max(16px, env(safe-area-inset-bottom)) + var(--vb-launcher-lift, 0px)); min-width: 0; height: 68px; padding: 10px 82px 10px 18px; border-radius: 18px; }
+  .vb-launcher-mascot { width: 86px; height: 86px; }
+  .vb-launcher-copy strong { font-size: 15px; }
+  .vb-launcher-copy > span { font-size: 12px; }
+  #vibego-chat-window { inset: 10px 10px max(10px, env(safe-area-inset-bottom)); width: auto; height: auto; max-height: calc(100dvh - 20px); border-radius: 20px; z-index: 1000; }
+  .vb-chat-header { padding-top: max(12px, env(safe-area-inset-top)); min-height: 88px; }
+  .vb-header-mascot { width: 52px; height: 56px; }
+  .vb-chat-header-btn { width: 36px; min-width: 36px; height: 44px; }
+  .vb-chat-body { padding: 16px 12px; }
+  .vb-chat-footer { padding: 12px; }
+  .vb-chat-title { font-size: 15px; }
+  .vb-chat-status { font-size: 12px; }
+  .vb-chat-human-option { justify-content: center; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #vibego-chat-trigger, #vibego-chat-window, .vb-msg, .vb-chat-pill, .vb-typing-dot { animation: none; transition: none; }
+}

@@ -1,0 +1,32 @@
+services:
+  - type: web
+    name: lovable-dashboard
+    env: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: ./
+    plan: starter
+    region: oregon
+    autoDeploy: true
+    buildCommand: npm install
+    startCommand: node dashboard.js
+    envVars:
+      - key: PORT
+        value: 3700
+      - key: NODE_ENV
+        value: production
+      - key: CHROME_PATH
+        value: /usr/bin/chromium-browser
+      - key: CASTLE_PK
+        sync: false
+      - key: FIREBASE_API_KEY
+        sync: false
+      - key: PROXY_URL
+        sync: false
+      - key: VPN_ROTATE
+        value: "1"
+      - key: GMAIL_USER
+        sync: false
+      - key: GMAIL_APP_PASSWORD
+        sync: false
+      - key: LOG_LEVEL
+        value: info

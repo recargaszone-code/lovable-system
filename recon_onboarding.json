@@ -1,0 +1,458 @@
+{
+  "email": "recon_ob_3446fa20@gmail.com",
+  "password": "T3st!Lov_zGV6rw",
+  "hits": [
+    {
+      "phase": "request",
+      "url": "https://api.lovable.dev/auth/check-auth-provider",
+      "method": "OPTIONS",
+      "headers": {
+        "accept": "*/*",
+        "access-control-request-headers": "content-type,x-client-git-sha,x-lov-platform",
+        "access-control-request-method": "POST",
+        "origin": "https://lovable.dev",
+        "sec-fetch-mode": "cors",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36"
+      },
+      "ts": 1793834176386
+    },
+    {
+      "phase": "request",
+      "url": "https://api.lovable.dev/auth/check-auth-provider",
+      "method": "POST",
+      "postData": "{\"email\":\"recon_ob_3446fa20@gmail.com\",\"castle_request_token\":\"tprdd-dr|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",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "",
+        "x-lov-platform": "{\"platform\":\"web\",\"version\":\"11e2447ea48688c88c8c10ce2aac4947382a25a0\",\"clientCapabilities\":[\"visual_explanation_v1\",\"board_forms_v1\",\"logo_images_v1\"]}",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "x-client-git-sha": "11e2447ea48688c88c8c10ce2aac4947382a25a0",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+        "content-type": "application/json",
+        "accept": "*/*",
+        "cookie": "__cf_bm=xyg7MLBvJDVJG_n.sN6kP88z0hpByEUKbTa48PDh5oc-1793834171.99044-1.0.1.1-Doct9G7kSLpzKEYBiJmZSdv0lIjZJ2cvd7z6fceJynk5M05bv79bVoVg7kRGMV5NoSTzJgAXg9yINiMMfOkHokfp3RnI5CWgFpaLarGwi8VAG3DP63awY14dxu6GGbYq; __cuid=e32af60b-1536-4aa4-a267-1825d0b86497; rl_anonymous_id=RS_ENC_v3_ImIyNjc3ZmRhLTM4ZTctNGU3Ni05NTA0LTE4M2JiOGNkNGZkNSI%3D",
+        "origin": "https://lovable.dev"
+      },
+      "ts": 1793834178364
+    },
+    {
+      "phase": "response",
+      "url": "https://api.lovable.dev/auth/check-auth-provider",
+      "status": 200,
+      "body": "",
+      "ts": 1793834178365
+    },
+    {
+      "phase": "response",
+      "url": "https://api.lovable.dev/auth/check-auth-provider",
+      "status": 200,
+      "body": "{\"providers\":[\"password\"],\"user_exists\":true,\"require_sso\":false}\n",
+      "ts": 1793834180851
+    },
+    {
+      "phase": "request",
+      "url": "https://api.lovable.dev/auth/castle-event",
+      "method": "OPTIONS",
+      "headers": {
+        "accept": "*/*",
+        "access-control-request-headers": "content-type",
+        "access-control-request-method": "POST",
+        "origin": "https://lovable.dev",
+        "sec-fetch-mode": "cors",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36"
+      },
+      "ts": 1793834182230
+    },
+    {
+      "phase": "request",
+      "url": "https://api.lovable.dev/auth/castle-event",
+      "method": "POST",
+      "postData": "{\"request_token\":\"tprdd-dr|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",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "content-type": "application/json",
+        "sec-ch-ua-mobile": "?0",
+        "accept": "*/*",
+        "origin": "https://lovable.dev"
+      },
+      "ts": 1793834182942
+    },
+    {
+      "phase": "response",
+      "url": "https://api.lovable.dev/auth/castle-event",
+      "status": 200,
+      "body": "",
+      "ts": 1793834182942
+    },
+    {
+      "phase": "request",
+      "url": "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyBQNjlw9Vp4tP4VVeANzyPJnqbG2wLbYPw",
+      "method": "OPTIONS",
+      "headers": {
+        "accept": "*/*",
+        "access-control-request-headers": "content-type,x-client-version,x-firebase-client,x-firebase-gmpid,x-firebase-locale",
+        "access-control-request-method": "POST",
+        "origin": "https://lovable.dev",
+        "sec-fetch-mode": "cors",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+        "referer": "https://lovable.dev/"
+      },
+      "ts": 1793834183862
+    },
+    {
+      "phase": "response",
+      "url": "https://api.lovable.dev/auth/castle-event",
+      "status": 204,
+      "body": "",
+      "ts": 1793834183864
+    },
+    {
+      "phase": "request",
+      "url": "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyBQNjlw9Vp4tP4VVeANzyPJnqbG2wLbYPw",
+      "method": "POST",
+      "postData": "{\"returnSecureToken\":true,\"email\":\"recon_ob_3446fa20@gmail.com\",\"password\":\"T3st!Lov_zGV6rw\",\"clientType\":\"CLIENT_TYPE_WEB\"}",
+      "headers": {
+        "x-firebase-client": "eyJ2ZXJzaW9uIjoyLCJoZWFydGJlYXRzIjpbeyJhZ2VudCI6ImZpcmUtY29yZS8wLjE2LjQgZmlyZS1jb3JlLWVzbTIwMjAvMC4xNi40IGZpcmUtanMvIGZpcmUtanMtYWxsLWFwcC8xMy4xLjAgZmlyZS1hdXRoLzEuMTMuOCBmaXJlLWF1dGgtZXNtMjAyMC8xLjEzLjgiLCJkYXRlcyI6WyIyMDI2LTExLTA0Il19XX0",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "https://lovable.dev/",
+        "x-firebase-locale": "en-GB",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "x-firebase-gmpid": "1:288002387414:web:231da37c38c486ca814877",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+        "x-client-version": "Chrome/JsCore/13.1.0/FirebaseCore-web",
+        "content-type": "application/json",
+        "accept": "*/*",
+        "origin": "https://lovable.dev"
+      },
+      "ts": 1793834185972
+    },
+    {
+      "phase": "response",
+      "url": "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyBQNjlw9Vp4tP4VVeANzyPJnqbG2wLbYPw",
+      "status": 200,
+      "body": "",
+      "ts": 1793834185973
+    },
+    {
+      "phase": "response",
+      "url": "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyBQNjlw9Vp4tP4VVeANzyPJnqbG2wLbYPw",
+      "status": 200,
+      "body": "{\n  \"kind\": \"identitytoolkit#VerifyPasswordResponse\",\n  \"localId\": \"hdV5KaKCZIMCX3kDENvgQzitVpX2\",\n  \"email\": \"recon_ob_3446fa20@gmail.com\",\n  \"displayName\": \"\",\n  \"idToken\": \"eyJhbGciOiJSUzI1NiIsImtpZCI6IjkwNGIwZjkxYmU2ZWIwODY3ZGFiYmFhYjU4N2RmYzJlMzNmMDBhMjQiLCJ0eXAiOiJKV1QifQ.eyJsb3ZhYmxlX3Byb3Zpc2lvbmVkX2VtYWlsIjoicmVjb25fb2JfMzQ0NmZhMjBAZ21haWwuY29tIiwibG9naW5fc2Vzc2lvbl9pZCI6IjY3NmU5YTY3LThjOGMtNGRiZC04YjJmLWY2MGM0YmM2YTk3YSIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9ncHQtZW5naW5lZXItMzkwNjA3IiwiYXVkIjoiZ3B0LWVuZ2luZWVyLTM5MDYwNyIsImF1dGhfdGltZSI6MTc5MzgzNDE5MCwidXNlcl9pZCI6ImhkVjVLYUtDWklNQ1gza0RFTnZnUXppdFZwWDIiLCJzdWIiOiJoZFY1S2FLQ1pJTUNYM2tERU52Z1F6aXRWcFgyIiwiaWF0IjoxNzkzODM0MTkwLCJleHAiOjE3OTM4Mzc3OTAsImVtYWlsIjoicmVjb25fb2JfMzQ0NmZhMjBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbInJlY29uX29iXzM0NDZmYTIwQGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.K3HAS4g4aBslOyZ1nhxgESKZolJy5ceEQhY4QyB8jUwj179Aw3-7eJTq6IASNh6kOh9D40-iDZO9azLR0-cV2WRPRad9ZUY9lPj-MwqIUTIbk_ZaSXrTmRytBZEMsjR3By5TiW8XX6WY0AjkpeFjZhhV_Hp0Y6h-fteiPRQEIpbxistuIjJxIQ5vNzNMkLkbUuk-jjFsHtZfC-xOVtiRqEoEiFMeIaRVBUyJPEpQsPt9DxlgehKPiqygoFvrzg3TuHTofgooKjS5h9y2uXEuENWmzEPl_KjTrbhR0nUtRSBCCtpJ4b5hCU_tietu5ihdE9mf-SU3Kos9XPzrAJPrwg\",\n  \"registered\": true,\n  \"refreshToken\": \"AMf-vByTKLqCRsGUpB2zJ-0PIUG51MG69jNUwbJ78K2XyqRse1o9iudGsqXavRxgNq5rScu0Ey9y7N1helJrKZBayWvpv4NY2u-Ly99ofYYOXVxi_EPcgOWfVmlXSveuJvysVAfHWhies5wnOFFw7zj2lNzAhIXhpCYnrEXKh7R8dWYr79fDWgNBM8O0QTPCmE9Ijv12o6zR6YmSC_mbTOPcjGXrW_diXuAEvv-Eqt3Ag1qxWxCTAE8ibieERwBmDKYwNdjgoYm0eIpABkLw3KtKGPcyYhekuj1H3AE7ijLEtJGH2Re-AS3HDlyNhy_pTh-L3Bq_EH4Z\",\n  \"expiresIn\": \"3600\"\n}\n",
+      "ts": 1793834187226
+    },
+    {
+      "phase": "request",
+      "url": "https://identitytoolkit.googleapis.com/v1/accounts:lookup?key=AIzaSyBQNjlw9Vp4tP4VVeANzyPJnqbG2wLbYPw",
+      "method": "OPTIONS",
+      "headers": {
+        "accept": "*/*",
+        "access-control-request-headers": "content-type,x-client-version,x-firebase-gmpid,x-firebase-locale",
+        "access-control-request-method": "POST",
+        "origin": "https://lovable.dev",
+        "sec-fetch-mode": "cors",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+        "referer": "https://lovable.dev/"
+      },
+      "ts": 1793834187226
+    },
+    {
+      "phase": "request",
+      "url": "https://identitytoolkit.googleapis.com/v1/accounts:lookup?key=AIzaSyBQNjlw9Vp4tP4VVeANzyPJnqbG2wLbYPw",
+      "method": "POST",
+      "postData": "{\"idToken\":\"eyJhbGciOiJSUzI1NiIsImtpZCI6IjkwNGIwZjkxYmU2ZWIwODY3ZGFiYmFhYjU4N2RmYzJlMzNmMDBhMjQiLCJ0eXAiOiJKV1QifQ.eyJsb3ZhYmxlX3Byb3Zpc2lvbmVkX2VtYWlsIjoicmVjb25fb2JfMzQ0NmZhMjBAZ21haWwuY29tIiwibG9naW5fc2Vzc2lvbl9pZCI6IjY3NmU5YTY3LThjOGMtNGRiZC04YjJmLWY2MGM0YmM2YTk3YSIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9ncHQtZW5naW5lZXItMzkwNjA3IiwiYXVkIjoiZ3B0LWVuZ2luZWVyLTM5MDYwNyIsImF1dGhfdGltZSI6MTc5MzgzNDE5MCwidXNlcl9pZCI6ImhkVjVLYUtDWklNQ1gza0RFTnZnUXppdFZwWDIiLCJzdWIiOiJoZFY1S2FLQ1pJTUNYM2tERU52Z1F6aXRWcFgyIiwiaWF0IjoxNzkzODM0MTkwLCJleHAiOjE3OTM4Mzc3OTAsImVtYWlsIjoicmVjb25fb2JfMzQ0NmZhMjBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbInJlY29uX29iXzM0NDZmYTIwQGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.K3HAS4g4aBslOyZ1nhxgESKZolJy5ceEQhY4QyB8jUwj179Aw3-7eJTq6IASNh6kOh9D40-iDZO9azLR0-cV2WRPRad9ZUY9lPj-MwqIUTIbk_ZaSXrTmRytBZEMsjR3By5TiW8XX6WY0AjkpeFjZhhV_Hp0Y6h-fteiPRQEIpbxistuIjJxIQ5vNzNMkLkbUuk-jjFsHtZfC-xOVtiRqEoEiFMeIaRVBUyJPEpQsPt9DxlgehKPiqygoFvrzg3TuHTofgooKjS5h9y2uXEuENWmzEPl_KjTrbhR0nUtRSBCCtpJ4b5hCU_tietu5ihdE9mf-SU3Kos9XPzrAJPrwg\"}",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "https://lovable.dev/",
+        "x-firebase-locale": "en-GB",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "x-firebase-gmpid": "1:288002387414:web:231da37c38c486ca814877",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+        "x-client-version": "Chrome/JsCore/13.1.0/FirebaseCore-web",
+        "content-type": "application/json",
+        "accept": "*/*",
+        "origin": "https://lovable.dev"
+      },
+      "ts": 1793834187952
+    },
+    {
+      "phase": "response",
+      "url": "https://identitytoolkit.googleapis.com/v1/accounts:lookup?key=AIzaSyBQNjlw9Vp4tP4VVeANzyPJnqbG2wLbYPw",
+      "status": 200,
+      "body": "",
+      "ts": 1793834187953
+    },
+    {
+      "phase": "response",
+      "url": "https://identitytoolkit.googleapis.com/v1/accounts:lookup?key=AIzaSyBQNjlw9Vp4tP4VVeANzyPJnqbG2wLbYPw",
+      "status": 200,
+      "body": "{\n  \"kind\": \"identitytoolkit#GetAccountInfoResponse\",\n  \"users\": [\n    {\n      \"localId\": \"hdV5KaKCZIMCX3kDENvgQzitVpX2\",\n      \"email\": \"recon_ob_3446fa20@gmail.com\",\n      \"passwordHash\": \"UkVEQUNURUQ=\",\n      \"emailVerified\": false,\n      \"passwordUpdatedAt\": 1793834142771,\n      \"providerUserInfo\": [\n        {\n          \"providerId\": \"password\",\n          \"federatedId\": \"recon_ob_3446fa20@gmail.com\",\n          \"email\": \"recon_ob_3446fa20@gmail.com\",\n          \"rawId\": \"recon_ob_3446fa20@gmail.com\"\n        }\n      ],\n      \"validSince\": \"1793834142\",\n      \"disabled\": false,\n      \"lastLoginAt\": \"1793834161378\",\n      \"createdAt\": \"1793834142771\",\n      \"customAttributes\": \"{\\\"lovable_provisioned_email\\\":\\\"recon_ob_3446fa20@gmail.com\\\"}\",\n      \"lastRefreshAt\": \"2026-11-04T23:16:01.378Z\"\n    }\n  ]\n}\n",
+      "ts": 1793834188772
+    },
+    {
+      "phase": "request",
+      "url": "https://api.lovable.dev/auth/castle-event",
+      "method": "OPTIONS",
+      "headers": {
+        "accept": "*/*",
+        "access-control-request-headers": "authorization,content-type",
+        "access-control-request-method": "POST",
+        "origin": "https://lovable.dev",
+        "sec-fetch-mode": "cors",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36"
+      },
+      "ts": 1793834189290
+    },
+    {
+      "phase": "request",
+      "url": "https://api.lovable.dev/auth/castle-event",
+      "method": "POST",
+      "postData": "{\"request_token\":\"tprdd-dr|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",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjkwNGIwZjkxYmU2ZWIwODY3ZGFiYmFhYjU4N2RmYzJlMzNmMDBhMjQiLCJ0eXAiOiJKV1QifQ.eyJsb3ZhYmxlX3Byb3Zpc2lvbmVkX2VtYWlsIjoicmVjb25fb2JfMzQ0NmZhMjBAZ21haWwuY29tIiwibG9naW5fc2Vzc2lvbl9pZCI6IjY3NmU5YTY3LThjOGMtNGRiZC04YjJmLWY2MGM0YmM2YTk3YSIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9ncHQtZW5naW5lZXItMzkwNjA3IiwiYXVkIjoiZ3B0LWVuZ2luZWVyLTM5MDYwNyIsImF1dGhfdGltZSI6MTc5MzgzNDE5MCwidXNlcl9pZCI6ImhkVjVLYUtDWklNQ1gza0RFTnZnUXppdFZwWDIiLCJzdWIiOiJoZFY1S2FLQ1pJTUNYM2tERU52Z1F6aXRWcFgyIiwiaWF0IjoxNzkzODM0MTkwLCJleHAiOjE3OTM4Mzc3OTAsImVtYWlsIjoicmVjb25fb2JfMzQ0NmZhMjBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbInJlY29uX29iXzM0NDZmYTIwQGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.K3HAS4g4aBslOyZ1nhxgESKZolJy5ceEQhY4QyB8jUwj179Aw3-7eJTq6IASNh6kOh9D40-iDZO9azLR0-cV2WRPRad9ZUY9lPj-MwqIUTIbk_ZaSXrTmRytBZEMsjR3By5TiW8XX6WY0AjkpeFjZhhV_Hp0Y6h-fteiPRQEIpbxistuIjJxIQ5vNzNMkLkbUuk-jjFsHtZfC-xOVtiRqEoEiFMeIaRVBUyJPEpQsPt9DxlgehKPiqygoFvrzg3TuHTofgooKjS5h9y2uXEuENWmzEPl_KjTrbhR0nUtRSBCCtpJ4b5hCU_tietu5ihdE9mf-SU3Kos9XPzrAJPrwg",
+        "referer": "",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "content-type": "application/json",
+        "sec-ch-ua-mobile": "?0",
+        "accept": "*/*",
+        "origin": "https://lovable.dev"
+      },
+      "ts": 1793834189916
+    },
+    {
+      "phase": "response",
+      "url": "https://api.lovable.dev/auth/castle-event",
+      "status": 200,
+      "body": "",
+      "ts": 1793834189917
+    },
+    {
+      "phase": "response",
+      "url": "https://api.lovable.dev/auth/castle-event",
+      "status": 204,
+      "body": "",
+      "ts": 1793834191049
+    },
+    {
+      "phase": "request",
+      "url": "https://api.lovable.dev/metrics/frontend",
+      "method": "OPTIONS",
+      "headers": {
+        "accept": "*/*",
+        "access-control-request-headers": "authorization,content-type",
+        "access-control-request-method": "POST",
+        "origin": "https://lovable.dev",
+        "sec-fetch-mode": "cors",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36"
+      },
+      "ts": 1793834192110
+    },
+    {
+      "phase": "request",
+      "url": "https://api.lovable.dev/auth/castle-event",
+      "method": "POST",
+      "postData": "{\"request_token\":\"tprdd-dr|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",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "content-type": "application/json",
+        "sec-ch-ua-mobile": "?0",
+        "accept": "*/*",
+        "origin": "https://lovable.dev"
+      },
+      "ts": 1793834192497
+    },
+    {
+      "phase": "request",
+      "url": "https://api.lovable.dev/metrics/frontend",
+      "method": "POST",
+      "postData": "{\"counters\":[{\"name\":\"frontend.auth.sign_in_success\",\"value\":1,\"labels\":{\"method\":\"email\"}}],\"histograms\":[],\"client_timestamp\":\"2026-11-04T23:16:32.077Z\"}",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjkwNGIwZjkxYmU2ZWIwODY3ZGFiYmFhYjU4N2RmYzJlMzNmMDBhMjQiLCJ0eXAiOiJKV1QifQ.eyJsb3ZhYmxlX3Byb3Zpc2lvbmVkX2VtYWlsIjoicmVjb25fb2JfMzQ0NmZhMjBAZ21haWwuY29tIiwibG9naW5fc2Vzc2lvbl9pZCI6IjY3NmU5YTY3LThjOGMtNGRiZC04YjJmLWY2MGM0YmM2YTk3YSIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9ncHQtZW5naW5lZXItMzkwNjA3IiwiYXVkIjoiZ3B0LWVuZ2luZWVyLTM5MDYwNyIsImF1dGhfdGltZSI6MTc5MzgzNDE5MCwidXNlcl9pZCI6ImhkVjVLYUtDWklNQ1gza0RFTnZnUXppdFZwWDIiLCJzdWIiOiJoZFY1S2FLQ1pJTUNYM2tERU52Z1F6aXRWcFgyIiwiaWF0IjoxNzkzODM0MTkwLCJleHAiOjE3OTM4Mzc3OTAsImVtYWlsIjoicmVjb25fb2JfMzQ0NmZhMjBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbInJlY29uX29iXzM0NDZmYTIwQGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.K3HAS4g4aBslOyZ1nhxgESKZolJy5ceEQhY4QyB8jUwj179Aw3-7eJTq6IASNh6kOh9D40-iDZO9azLR0-cV2WRPRad9ZUY9lPj-MwqIUTIbk_ZaSXrTmRytBZEMsjR3By5TiW8XX6WY0AjkpeFjZhhV_Hp0Y6h-fteiPRQEIpbxistuIjJxIQ5vNzNMkLkbUuk-jjFsHtZfC-xOVtiRqEoEiFMeIaRVBUyJPEpQsPt9DxlgehKPiqygoFvrzg3TuHTofgooKjS5h9y2uXEuENWmzEPl_KjTrbhR0nUtRSBCCtpJ4b5hCU_tietu5ihdE9mf-SU3Kos9XPzrAJPrwg",
+        "referer": "",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "content-type": "application/json",
+        "sec-ch-ua-mobile": "?0",
+        "accept": "*/*",
+        "origin": "https://lovable.dev"
+      },
+      "ts": 1793834192754
+    },
+    {
+      "phase": "response",
+      "url": "https://api.lovable.dev/metrics/frontend",
+      "status": 200,
+      "body": "",
+      "ts": 1793834192755
+    },
+    {
+      "phase": "response",
+      "url": "https://api.lovable.dev/auth/castle-event",
+      "status": 204,
+      "body": "",
+      "ts": 1793834193406
+    },
+    {
+      "phase": "response",
+      "url": "https://api.lovable.dev/metrics/frontend",
+      "status": 401,
+      "body": "{\"status\":401,\"type\":\"email_not_verified\",\"title\":\"Email address not verified\",\"message\":\"Email address not verified\",\"details\":\"\",\"request_id\":\"1d59af1f7c477b354a3ec69dfe9b5ecd\"}\n",
+      "ts": 1793834193458
+    },
+    {
+      "phase": "request",
+      "url": "https://api.lovable.dev/user/announcement-state",
+      "method": "OPTIONS",
+      "headers": {
+        "accept": "*/*",
+        "access-control-request-headers": "authorization,content-type,x-browser-session-id,x-client-git-sha,x-lov-platform",
+        "access-control-request-method": "GET",
+        "origin": "https://lovable.dev",
+        "sec-fetch-mode": "cors",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36"
+      },
+      "ts": 1793834194716
+    },
+    {
+      "phase": "request",
+      "url": "https://api.lovable.dev/user/announcement-state",
+      "method": "GET",
+      "headers": {
+        "x-browser-session-id": "bsess_01m6mdk5ryfzrr9sjwyb9cq5gh",
+        "sec-ch-ua-platform": "\"Windows\"",
+        "authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjkwNGIwZjkxYmU2ZWIwODY3ZGFiYmFhYjU4N2RmYzJlMzNmMDBhMjQiLCJ0eXAiOiJKV1QifQ.eyJsb3ZhYmxlX3Byb3Zpc2lvbmVkX2VtYWlsIjoicmVjb25fb2JfMzQ0NmZhMjBAZ21haWwuY29tIiwibG9naW5fc2Vzc2lvbl9pZCI6IjY3NmU5YTY3LThjOGMtNGRiZC04YjJmLWY2MGM0YmM2YTk3YSIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9ncHQtZW5naW5lZXItMzkwNjA3IiwiYXVkIjoiZ3B0LWVuZ2luZWVyLTM5MDYwNyIsImF1dGhfdGltZSI6MTc5MzgzNDE5MCwidXNlcl9pZCI6ImhkVjVLYUtDWklNQ1gza0RFTnZnUXppdFZwWDIiLCJzdWIiOiJoZFY1S2FLQ1pJTUNYM2tERU52Z1F6aXRWcFgyIiwiaWF0IjoxNzkzODM0MTkwLCJleHAiOjE3OTM4Mzc3OTAsImVtYWlsIjoicmVjb25fb2JfMzQ0NmZhMjBAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbInJlY29uX29iXzM0NDZmYTIwQGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.K3HAS4g4aBslOyZ1nhxgESKZolJy5ceEQhY4QyB8jUwj179Aw3-7eJTq6IASNh6kOh9D40-iDZO9azLR0-cV2WRPRad9ZUY9lPj-MwqIUTIbk_ZaSXrTmRytBZEMsjR3By5TiW8XX6WY0AjkpeFjZhhV_Hp0Y6h-fteiPRQEIpbxistuIjJxIQ5vNzNMkLkbUuk-jjFsHtZfC-xOVtiRqEoEiFMeIaRVBUyJPEpQsPt9DxlgehKPiqygoFvrzg3TuHTofgooKjS5h9y2uXEuENWmzEPl_KjTrbhR0nUtRSBCCtpJ4b5hCU_tietu5ihdE9mf-SU3Kos9XPzrAJPrwg",
+        "referer": "",
+        "x-lov-platform": "{\"platform\":\"web\",\"version\":\"11e2447ea48688c88c8c10ce2aac4947382a25a0\",\"clientCapabilities\":[\"visual_explanation_v1\",\"board_forms_v1\",\"logo_images_v1\"]}",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "x-client-git-sha": "11e2447ea48688c88c8c10ce2aac4947382a25a0",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+        "content-type": "application/json",
+        "accept": "*/*",
+        "cookie": "__cf_bm=xyg7MLBvJDVJG_n.sN6kP88z0hpByEUKbTa48PDh5oc-1793834171.99044-1.0.1.1-Doct9G7kSLpzKEYBiJmZSdv0lIjZJ2cvd7z6fceJynk5M05bv79bVoVg7kRGMV5NoSTzJgAXg9yINiMMfOkHokfp3RnI5CWgFpaLarGwi8VAG3DP63awY14dxu6GGbYq; __cuid=e32af60b-1536-4aa4-a267-1825d0b86497; rl_anonymous_id=RS_ENC_v3_ImIyNjc3ZmRhLTM4ZTctNGU3Ni05NTA0LTE4M2JiOGNkNGZkNSI%3D",
+        "origin": "https://lovable.dev"
+      },
+      "ts": 1793834195340
+    },
+    {
+      "phase": "response",
+      "url": "https://api.lovable.dev/user/announcement-state",
+      "status": 200,
+      "body": "",
+      "ts": 1793834195341
+    },
+    {
+      "phase": "request",
+      "url": "https://identitytoolkit.googleapis.com/v1/projects?key=AIzaSyBQNjlw9Vp4tP4VVeANzyPJnqbG2wLbYPw",
+      "method": "OPTIONS",
+      "headers": {
+        "accept": "*/*",
+        "access-control-request-headers": "content-type,x-client-version,x-firebase-gmpid,x-firebase-locale",
+        "access-control-request-method": "GET",
+        "origin": "https://lovable.dev",
+        "sec-fetch-mode": "cors",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+        "referer": "https://lovable.dev/"
+      },
+      "ts": 1793834195521
+    },
+    {
+      "phase": "response",
+      "url": "https://api.lovable.dev/user/announcement-state",
+      "status": 401,
+      "body": "{\"status\":401,\"type\":\"email_not_verified\",\"title\":\"Email address not verified\",\"message\":\"Email address not verified\",\"details\":\"\",\"request_id\":\"1fbced39b67fd5ce8752937fcf97da1f\"}\n",
+      "ts": 1793834195997
+    },
+    {
+      "phase": "request",
+      "url": "https://identitytoolkit.googleapis.com/v1/projects?key=AIzaSyBQNjlw9Vp4tP4VVeANzyPJnqbG2wLbYPw",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "https://lovable.dev/",
+        "x-firebase-locale": "en",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "sec-ch-ua-mobile": "?0",
+        "x-firebase-gmpid": "1:288002387414:web:231da37c38c486ca814877",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+        "x-client-version": "Chrome/JsCore/13.1.0/FirebaseCore-web",
+        "content-type": "application/json",
+        "accept": "*/*",
+        "origin": "https://lovable.dev"
+      },
+      "ts": 1793834196186
+    },
+    {
+      "phase": "response",
+      "url": "https://identitytoolkit.googleapis.com/v1/projects?key=AIzaSyBQNjlw9Vp4tP4VVeANzyPJnqbG2wLbYPw",
+      "status": 200,
+      "body": "",
+      "ts": 1793834196187
+    },
+    {
+      "phase": "response",
+      "url": "https://identitytoolkit.googleapis.com/v1/projects?key=AIzaSyBQNjlw9Vp4tP4VVeANzyPJnqbG2wLbYPw",
+      "status": 200,
+      "body": "{\n  \"projectId\": \"288002387414\",\n  \"authorizedDomains\": [\n    \"localhost\",\n    \"gpt-engineer-390607.firebaseapp.com\",\n    \"gpt-engineer-390607.web.app\",\n    \"gpt-engineer-dev.firebaseapp.com\",\n    \"lovable.dev\",\n    \"auth.lovable.dev\",\n    \"dwl.lovable.dev\"\n  ]\n}\n",
+      "ts": 1793834196868
+    },
+    {
+      "phase": "request",
+      "url": "https://www.googleapis.com/identitytoolkit/v3/relyingparty/getProjectConfig?key=AIzaSyBQNjlw9Vp4tP4VVeANzyPJnqbG2wLbYPw&cb=1793834198514",
+      "method": "OPTIONS",
+      "headers": {
+        "accept": "*/*",
+        "access-control-request-headers": "content-type,x-client-version",
+        "access-control-request-method": "GET",
+        "origin": "https://auth.lovable.dev",
+        "sec-fetch-mode": "cors",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+        "referer": "https://auth.lovable.dev/"
+      },
+      "ts": 1793834198516
+    },
+    {
+      "phase": "request",
+      "url": "https://www.googleapis.com/identitytoolkit/v3/relyingparty/getProjectConfig?key=AIzaSyBQNjlw9Vp4tP4VVeANzyPJnqbG2wLbYPw&cb=1793834198514",
+      "method": "GET",
+      "headers": {
+        "sec-ch-ua-platform": "\"Windows\"",
+        "referer": "https://auth.lovable.dev/",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+        "x-client-version": "Chrome/Iframe/2.20.9/FirebaseCore-web",
+        "sec-ch-ua": "\"Not:A-Brand\";v=\"8\", \"Chromium\";v=\"156\", \"Google Chrome\";v=\"156\"",
+        "content-type": "application/json",
+        "sec-ch-ua-mobile": "?0",
+        "accept": "*/*",
+        "origin": "https://auth.lovable.dev"
+      },
+      "ts": 1793834200567
+    },
+    {
+      "phase": "response",
+      "url": "https://www.googleapis.com/identitytoolkit/v3/relyingparty/getProjectConfig?key=AIzaSyBQNjlw9Vp4tP4VVeANzyPJnqbG2wLbYPw&cb=1793834198514",
+      "status": 200,
+      "body": "",
+      "ts": 1793834200568
+    },
+    {
+      "phase": "response",
+      "url": "https://www.googleapis.com/identitytoolkit/v3/relyingparty/getProjectConfig?key=AIzaSyBQNjlw9Vp4tP4VVeANzyPJnqbG2wLbYPw&cb=1793834198514",
+      "status": 200,
+      "body": "{\n  \"projectId\": \"288002387414\",\n  \"authorizedDomains\": [\n    \"localhost\",\n    \"gpt-engineer-390607.firebaseapp.com\",\n    \"gpt-engineer-390607.web.app\",\n    \"gpt-engineer-dev.firebaseapp.com\",\n    \"lovable.dev\",\n    \"auth.lovable.dev\",\n    \"dwl.lovable.dev\"\n  ]\n}\n",
+      "ts": 1793834201229
+    }
+  ],
+  "final_url": "https://lovable.dev/verify-email"
+}

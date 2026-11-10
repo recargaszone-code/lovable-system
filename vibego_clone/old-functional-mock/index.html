@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VibeGO Conect — clone</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="brand">› vibego<span>conect</span>_</div>
+    <nav class="nav-links">
+      <a href="#produto">produto</a>
+      <a href="#modelos">modelos</a>
+      <a href="#planos">planos</a>
+      <a href="#faq">faq</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="btn ghost" data-open="recover">recuperar acesso</button>
+      <button class="btn primary" data-open="checkout">começar agora</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="eyebrow">00 / ACESSO DIRETO</div>
+    <h1>Seu próximo projeto <span class="caret">começa aqui_</span></h1>
+    <p class="lead">Claude Code e Codex sem cobrança por token. Preço fechado, acesso imediato, sem assinatura mensal.</p>
+    <div class="cta-row">
+      <button class="btn primary lg" data-open="checkout">ver planos</button>
+      <button class="btn ghost lg" data-open="connect">conectar ferramenta</button>
+    </div>
+    <div class="term-mock">
+      <div class="term-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="term-title">claude-code — vibego</span></div>
+      <pre class="term-body"><span class="muted">$</span> vibego connect --tool claude-code
+<span class="ok">✓</span> base url configurada: https://paglovers.com.br
+<span class="ok">✓</span> ip público autorizado
+<span class="ok">✓</span> sessão ativa — sem cobrança por token
+<span class="muted">›</span> <span class="cursor">seu próximo projeto_</span></pre>
+    </div>
+  </section>
+
+  <section class="panel" id="produto">
+    <div class="eyebrow">01 / DA INTERRUPÇÃO À CONTINUIDADE</div>
+    <h2>O token acaba. O ritmo não pode.</h2>
+    <p>Plano por token quebra o fluxo no meio da tarefa. Aqui é diferente: você paga um período fechado — 1 hora, 7 dias, 14 dias ou 30 dias — e usa sem olhar contador. O acesso é vinculado ao seu IP público, não à sua conta nas plataformas originais.</p>
+    <div class="grid-3">
+      <div class="card feature">
+        <div class="feature-ico">⏱</div>
+        <h3>Sem cobrança por token</h3>
+        <p>Preço fixo por período. Zero surpresa na fatura, zero corte no meio do raciocínio do agente.</p>
+      </div>
+      <div class="card feature">
+        <div class="feature-ico">🔒</div>
+        <h3>IP-bound, não device-bound</h3>
+        <p>Autenticação por IP público autorizado via auto-binding no primeiro uso — tolerante a IP dinâmico na mesma sub-rede.</p>
+      </div>
+      <div class="card feature">
+        <div class="feature-ico">⚡</div>
+        <h3>Ativação imediata</h3>
+        <p>PIX aprovado, chave liberada. Sem fila, sem aprovação manual.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel" id="modelos">
+    <div class="eyebrow">02 / BACKENDS DISPONÍVEIS</div>
+    <h2>Dois motores, um acesso</h2>
+    <div class="grid-2">
+      <div class="card model">
+        <div class="model-head"><span class="model-ico">◆</span><h3>Claude Code</h3></div>
+        <p>Terminal-first, raciocínio longo, ótimo para refactors grandes e navegação de codebase.</p>
+      </div>
+      <div class="card model">
+        <div class="model-head"><span class="model-ico">◇</span><h3>Codex</h3></div>
+        <p>Execução rápida orientada a tarefa, bom para patches pontuais e scripts curtos.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel" id="como-funciona">
+    <div class="eyebrow">03 / COMO ATIVAR</div>
+    <h2>4 passos até o primeiro commit</h2>
+    <div class="steps">
+      <div class="step"><span class="step-n">01</span><h4>Escolha o plano</h4><p>Trial de 1h ou períodos de 7, 14 ou 30 dias.</p></div>
+      <div class="step"><span class="step-n">02</span><h4>Pague via PIX</h4><p>QR code ou copia-e-cola, checagem automática a cada 3s.</p></div>
+      <div class="step"><span class="step-n">03</span><h4>Receba chave + código de recuperação</h4><p>Guarde o código — ele é a única forma de redefinir seu IP depois.</p></div>
+      <div class="step"><span class="step-n">04</span><h4>Conecte sua ferramenta</h4><p>Instalador Windows ou configuração manual de base URL.</p></div>
+    </div>
+  </section>
+
+  <section class="panel" id="planos">
+    <div class="eyebrow">04 / PLANOS</div>
+    <h2>Preço fechado, sem renovação automática</h2>
+    <div class="grid-4 pricing">
+      <div class="card plan">
+        <h3>Trial</h3>
+        <div class="price">R$ 19,90<span>/1 hora</span></div>
+        <ul>
+          <li>1 IP autorizado</li>
+          <li>Claude Code + Codex</li>
+          <li>Sem renovação automática</li>
+        </ul>
+        <button class="btn ghost full" data-open="checkout" data-plan="trial">escolher trial</button>
+      </div>
+      <div class="card plan">
+        <h3>7 dias</h3>
+        <div class="price">R$ 67,90<span>/7 dias</span></div>
+        <ul>
+          <li>1 IP autorizado</li>
+          <li>Claude Code + Codex</li>
+          <li>Sem renovação automática</li>
+        </ul>
+        <button class="btn ghost full" data-open="checkout" data-plan="7d">escolher 7 dias</button>
+      </div>
+      <div class="card plan highlight">
+        <div class="badge">mais popular</div>
+        <h3>14 dias</h3>
+        <div class="price">R$ 127,90<span>/14 dias</span></div>
+        <ul>
+          <li>1 IP autorizado</li>
+          <li>Claude Code + Codex</li>
+          <li>Sem renovação automática</li>
+        </ul>
+        <button class="btn primary full" data-open="checkout" data-plan="14d">escolher 14 dias</button>
+      </div>
+      <div class="card plan">
+        <h3>Max</h3>
+        <div class="price">R$ 247,90<span>/30 dias</span></div>
+        <ul>
+          <li>2 IPs autorizados</li>
+          <li>Claude Code + Codex</li>
+          <li>Troca de slot sob demanda</li>
+        </ul>
+        <button class="btn ghost full" data-open="checkout" data-plan="max">escolher max</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel" id="faq">
+    <div class="eyebrow">05 / FAQ</div>
+    <h2>Perguntas frequentes</h2>
+    <div class="accordion">
+      <div class="acc-item open">
+        <button class="acc-head">O que acontece se meu IP mudar? <span class="acc-ic">—</span></button>
+        <div class="acc-body"><p>O sistema tolera variação dentro da mesma sub-rede. Se o IP mudar de fato, o acesso retorna 403 e você usa "Redefinir meu IP" com sua chave e código de recuperação.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-head">O plano renova sozinho? <span class="acc-ic">+</span></button>
+        <div class="acc-body"><p>Não. Cada período é uma compra única via PIX. Ao vencer, você compra um novo período quando quiser.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-head">Perdi o código de recuperação, e agora? <span class="acc-ic">+</span></button>
+        <div class="acc-body"><p>Fale com o suporte via WhatsApp informando o ID do pedido — validação manual é necessária sem o código.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-head">Funciona no Mac? <span class="acc-ic">+</span></button>
+        <div class="acc-body"><p>Pacote nativo em validação. Por enquanto, configuração manual da base URL funciona em qualquer sistema.</p></div>
+      </div>
+      <div class="acc-item">
+        <button class="acc-head">Isso é um produto oficial da Anthropic/OpenAI? <span class="acc-ic">+</span></button>
+        <div class="acc-body"><p>Não. É um serviço independente de intermediação de acesso. Marcas e produtos citados pertencem aos seus respectivos donos.</p></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="brand">› vibego<span>conect</span>_</div>
+  <p>VibeGO Conect é um serviço independente de acesso a backends de codificação por IA. Não inclui assinaturas dos sites ChatGPT ou Claude. Todas as marcas pertencem aos seus respectivos proprietários.</p>
+  <div class="foot-links">
+    <button class="link" data-open="recover">recuperar acesso</button>
+    <button class="link" data-open="reset-ip">redefinir meu ip</button>
+    <button class="link" data-open="connect">conectar ferramenta</button>
+  </div>
+</footer>
+
+<!-- MODAL: checkout -->
+<div class="modal-overlay" id="modal-checkout">
+  <div class="modal">
+    <button class="modal-close" data-close>×</button>
+
+    <div class="modal-step" data-step="plan">
+      <h3>Escolha seu plano</h3>
+      <div class="plan-select">
+        <label><input type="radio" name="plan" value="trial"><span>Trial — 1 hora — R$ 19,90</span></label>
+        <label><input type="radio" name="plan" value="7d"><span>7 dias — R$ 67,90</span></label>
+        <label><input type="radio" name="plan" value="14d" checked><span>14 dias — R$ 127,90</span></label>
+        <label><input type="radio" name="plan" value="max"><span>Max — 30 dias / 2 IPs — R$ 247,90</span></label>
+      </div>
+      <button class="btn primary full" id="btn-gen-pix">gerar pagamento pix</button>
+    </div>
+
+    <div class="modal-step hidden" data-step="pix">
+      <h3>Pague via PIX</h3>
+      <div id="qrcode" class="qrcode"></div>
+      <div class="pix-code">
+        <input type="text" id="pix-copia-cola" readonly>
+        <button class="btn ghost" id="btn-copy-pix">copiar</button>
+      </div>
+      <div class="pix-status">
+        <span class="spinner"></span> checagem ativa a cada 3s<span id="pix-dots">...</span>
+      </div>
+      <div class="pix-debug">
+        <small>ambiente de teste — </small>
+        <button class="btn ghost sm" id="btn-force-pay">simular pagamento aprovado</button>
+      </div>
+    </div>
+
+    <div class="modal-step hidden" data-step="done">
+      <h3>Acesso liberado ✓</h3>
+      <p class="muted">Guarde estes dados — o código de recuperação só é mostrado uma vez.</p>
+      <div class="key-box">
+        <label>chave de acesso</label>
+        <div class="copy-row"><input type="text" id="out-key" readonly><button class="btn ghost sm" data-copy="out-key">copiar</button></div>
+      </div>
+      <div class="key-box">
+        <label>código de recuperação</label>
+        <div class="copy-row"><input type="text" id="out-recovery" readonly><button class="btn ghost sm" data-copy="out-recovery">copiar</button></div>
+      </div>
+      <div class="key-box">
+        <label>id do pedido</label>
+        <div class="copy-row"><input type="text" id="out-order" readonly><button class="btn ghost sm" data-copy="out-order">copiar</button></div>
+      </div>
+      <button class="btn primary full" id="btn-to-connect">conectar minha ferramenta agora</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: recuperar acesso -->
+<div class="modal-overlay" id="modal-recover">
+  <div class="modal">
+    <button class="modal-close" data-close>×</button>
+    <h3>Recuperar acesso</h3>
+    <p class="muted">Informe o ID do pedido e o código de recuperação enviados na ativação.</p>
+    <div class="field"><label>id do pedido</label><input type="text" id="rec-order" placeholder="VBG-XXXXXXX"></div>
+    <div class="field"><label>código de recuperação</label><input type="text" id="rec-code" placeholder="XXXX-XXXX-XXXX"></div>
+    <button class="btn primary full" id="btn-do-recover">recuperar chave</button>
+    <div class="result hidden" id="recover-result"></div>
+    <p class="fallback muted">Não tem o código? <a href="https://wa.me/550000000000" target="_blank" rel="noopener">fale com o suporte via WhatsApp</a>.</p>
+  </div>
+</div>
+
+<!-- MODAL: redefinir ip -->
+<div class="modal-overlay" id="modal-reset-ip">
+  <div class="modal">
+    <button class="modal-close" data-close>×</button>
+    <h3>Redefinir meu IP</h3>
+    <p class="muted">Isso invalida seu código de recuperação atual e gera um novo.</p>
+    <div class="field"><label>chave de acesso</label><input type="text" id="reset-key" placeholder="VBG-KEY-..."></div>
+    <div class="field"><label>código de recuperação atual</label><input type="text" id="reset-code" placeholder="XXXX-XXXX-XXXX"></div>
+    <div class="field hidden" id="reset-slot-wrap">
+      <label>slot (plano Max — 2 IPs)</label>
+      <select id="reset-slot"><option value="1">conexão 1</option><option value="2">conexão 2</option></select>
+    </div>
+    <button class="btn primary full" id="btn-do-reset">redefinir ip agora</button>
+    <div class="result hidden" id="reset-result"></div>
+  </div>
+</div>
+
+<!-- MODAL: conectar ferramenta -->
+<div class="modal-overlay" id="modal-connect">
+  <div class="modal wide">
+    <button class="modal-close" data-close>×</button>
+    <h3>Conectar sua ferramenta</h3>
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="win">Windows</button>
+      <button class="tab-btn" data-tab="mac">macOS</button>
+      <button class="tab-btn" data-tab="manual">Manual</button>
+    </div>
+    <div class="tab-body" data-tab-body="win">
+      <p>Baixe o instalador e rode. Ele configura a base URL e sua chave automaticamente.</p>
+      <button class="btn primary full" id="btn-download-msi">baixar vibego-connect.msi</button>
+      <p class="muted">ou cole no PowerShell:</p>
+      <pre class="code-block" id="ps-snippet">$env:ANTHROPIC_BASE_URL="https://paglovers.com.br"; $env:ANTHROPIC_API_KEY="SUA_CHAVE_AQUI"; claude</pre>
+      <button class="btn ghost sm" data-copy="ps-snippet">copiar comando</button>
+    </div>
+    <div class="tab-body hidden" data-tab-body="mac">
+      <p class="muted">Pacote nativo em validação. Use a aba "Manual" por enquanto.</p>
+    </div>
+    <div class="tab-body hidden" data-tab-body="manual">
+      <div class="field"><label>base url</label><div class="copy-row"><input type="text" id="manual-url" value="https://paglovers.com.br" readonly><button class="btn ghost sm" data-copy="manual-url">copiar</button></div></div>
+      <div class="field"><label>sua chave de acesso</label><input type="text" id="manual-key" placeholder="cole sua chave aqui"></div>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
