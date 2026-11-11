@@ -39,12 +39,19 @@ const LOVABLE_API_BASE = 'https://api.lovable.dev';
 const CASTLE_PK = 'pk_TaKsqF94pjCsoyepV6mH3V24AXoM6A7M';
 let LOVABLE_GIT_SHA = '6462f9a33cdfbc0c1494b8365435191a99b15b2c';
 
-// Chrome path — local Windows ou Alpine container
-const CHROME_PATH = process.env.CHROME_PATH || (
-  process.platform === 'linux'
-    ? '/usr/bin/chromium-browser'
-    : 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe'
-);
+// Chrome path — local Windows ou Linux (WSL/VM) ou Alpine container
+const CHROME_PATH = process.env.CHROME_PATH || (() => {
+  if (process.platform === 'linux') {
+    // Tenta chrome-headless-shell (Playwright) primeiro
+    const fs = require('fs');
+    const playwritePath = '/root/.cache/ms-playwright/chromium_headless_shell-1228/chrome-headless-shell-linux64/chrome-headless-shell';
+    if (fs.existsSync(playwritePath)) return playwritePath;
+    // Fallback pra Alpine container
+    return '/usr/bin/chromium-browser';
+  }
+  // Windows
+  return 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
+})();
 
 // --- chrome real via spawn + connect ---
 function aguardarPortaDebug(porta, timeoutMs = 300000) {
@@ -119,9 +126,14 @@ async function abrirChromeNativo(proxy_server, extra_args = []) {
   const pastaTemp = path.join(os.tmpdir(), `chrome_lovable_${Date.now()}_${crypto.randomInt(100000, 999999)}`);
   const proxy = parseProxy(proxy_server);
 
+  // Detecta se é chrome-headless-shell (Playwright)
+  const isHeadlessShell = CHROME_PATH.includes('chrome-headless-shell');
+
   const chromeArgs = [
     `--user-data-dir=${pastaTemp}`,
     `--remote-debugging-port=${porta}`,
+    // Headless mode pra chrome-headless-shell ou containers
+    ...(isHeadlessShell || isRailway ? ['--headless'] : []),
     // Startup flags essenciais
     '--no-first-run',
     '--no-default-browser-check',
