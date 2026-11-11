@@ -126,7 +126,8 @@ async function abrirChromeNativo(proxy_server, extra_args = []) {
   const pastaTemp = path.join(os.tmpdir(), `chrome_lovable_${Date.now()}_${crypto.randomInt(100000, 999999)}`);
   const proxy = parseProxy(proxy_server);
 
-  // Detecta se é chrome-headless-shell (Playwright)
+  // Detecta environment antes de usar
+  const isRailway = process.env.RAILWAY_ENVIRONMENT_NAME || process.env.RAILWAY_REGION;
   const isHeadlessShell = CHROME_PATH.includes('chrome-headless-shell');
 
   const chromeArgs = [
@@ -159,7 +160,6 @@ async function abrirChromeNativo(proxy_server, extra_args = []) {
   //   console.log(`[chrome] proxy: ${proxy.hostPort} (auth: ${proxy.username ? 'yes' : 'no'})`);
   // }
 
-  const isRailway = process.env.RAILWAY_ENVIRONMENT_NAME || process.env.RAILWAY_REGION;
   const timeoutMs = isRailway ? 300000 : 120000; // Railway: 300s, local: 120s
 
   console.log(`[chrome] abrindo (${isRailway ? '🚂 RAILWAY' : 'local'}, timeout: ${Math.round(timeoutMs / 1000)}s)...`);
