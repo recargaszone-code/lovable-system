@@ -47,22 +47,25 @@ const CHROME_PATH = process.env.CHROME_PATH || (
 );
 
 // --- chrome real via spawn + connect ---
-function aguardarPortaDebug(porta, timeoutMs = 120000) {
+function aguardarPortaDebug(porta, timeoutMs = 200000) {
   const inicio = Date.now();
   let tentativas = 0;
   return new Promise((resolve, reject) => {
     const tentar = () => {
       tentativas++;
-      const req = http.get(`http://127.0.0.1:${porta}/json/version`, { timeout: 2000 }, res => {
+      const req = http.get(`http://127.0.0.1:${porta}/json/version`, { timeout: 3000 }, res => {
         res.resume();
         if (res.statusCode === 200) {
-          console.log(`[chrome] port ${porta} respondendo em ${Date.now() - inicio}ms (tentativa ${tentativas})`);
+          console.log(`[chrome] ✅ port ${porta} respondendo em ${Date.now() - inicio}ms (tentativa ${tentativas})`);
           return resolve(true);
         }
         retry();
       });
       req.on('error', (err) => {
-        if (tentativas % 10 === 0) console.log(`[chrome] aguardando... tentativa ${tentativas} (${Date.now() - inicio}ms, erro: ${err.code})`);
+        if (tentativas % 20 === 0) {
+          const elapsed = Math.round((Date.now() - inicio) / 1000);
+          console.log(`[chrome] ⏳ aguardando... tentativa ${tentativas} (${elapsed}s, erro: ${err.code})`);
+        }
         retry();
       });
       req.on('timeout', () => {
@@ -72,9 +75,12 @@ function aguardarPortaDebug(porta, timeoutMs = 120000) {
     };
     const retry = () => {
       const elapsed = Date.now() - inicio;
-      if (elapsed > timeoutMs) return reject(new Error(`timeout aguardando Chrome após ${tentativas} tentativas (${elapsed}ms)`));
-      // exponential backoff: 100ms, 200ms, 400ms, 800ms, then cap at 2s
-      const delay = Math.min(100 * Math.pow(1.5, Math.floor(tentativas / 5)), 2000);
+      if (elapsed > timeoutMs) {
+        const elapsedSec = Math.round(elapsed / 1000);
+        return reject(new Error(`timeout aguardando Chrome após ${tentativas} tentativas em ${elapsedSec}s`));
+      }
+      // inicio lento: 500ms, depois exponential backoff
+      const delay = tentativas < 3 ? 500 : Math.min(200 * Math.pow(1.3, Math.floor(tentativas / 5)), 3000);
       setTimeout(tentar, delay);
     };
     tentar();
@@ -117,21 +123,19 @@ async function abrirChromeNativo(proxy_server, extra_args = []) {
     `--remote-debugging-port=${porta}`,
     '--no-first-run',
     '--no-default-browser-check',
-    '--window-size=800,600',
+    '--window-size=1024,768',
     '--lang=en-US,en,pt-BR,pt',
-    // Performance flags pra container com pouca memória
+    // Performance flags críticas pra Railway (512MB RAM)
     '--disable-dev-shm-usage',
     '--disable-gpu',
     '--no-sandbox',
     '--disable-software-rasterizer',
     '--disable-extensions',
     '--disable-plugins',
-    '--single-process',
-    '--disable-background-networking',
-    '--disable-preconnect',
+    '--disable-default-apps',
     '--disable-sync',
-    '--no-default-browser-check',
-    '--no-pings',
+    '--disable-background-networking',
+    '--disable-client-side-phishing-detection',
     ...extra_args,
   ];
 
@@ -140,7 +144,13 @@ async function abrirChromeNativo(proxy_server, extra_args = []) {
   //   console.log(`[chrome] proxy: ${proxy.hostPort} (auth: ${proxy.username ? 'yes' : 'no'})`);
   // }
 
-  console.log(`[chrome] abrindo (perfil: ${pastaTemp}, porta: ${porta}, path: ${CHROME_PATH})...`);
+  const isRailway = process.env.RAILWAY_ENVIRONMENT_NAME || process.env.RAILWAY_REGION;
+  const timeoutMs = isRailway ? 200000 : 120000; // Railway: 200s, local: 120s
+
+  console.log(`[chrome] abrindo (${isRailway ? '🚂 RAILWAY' : 'local'}, timeout: ${Math.round(timeoutMs / 1000)}s)...`);
+  console.log(`[chrome]   perfil: ${pastaTemp}`);
+  console.log(`[chrome]   porta: ${porta}`);
+  console.log(`[chrome]   path: ${CHROME_PATH}`);
 
   const chromeProc = spawn(CHROME_PATH, chromeArgs, {
     detached: true,
@@ -148,13 +158,12 @@ async function abrirChromeNativo(proxy_server, extra_args = []) {
   });
 
   chromeProc.on('error', (err) => {
-    console.error(`[chrome] spawn error: ${err.message}`);
+    console.error(`[chrome] ❌ spawn error: ${err.message}`);
   });
 
   chromeProc.unref();
 
-  // Railway containers precisam de mais tempo pra iniciar Chrome
-  const timeoutMs = process.env.RAILWAY_ENVIRONMENT_NAME ? 150000 : 120000;
+  console.log(`[chrome] ⏳ aguardando porta ${porta}...`);
   await aguardarPortaDebug(porta, timeoutMs);
   const browser = await puppeteer.connect({
     browserURL: `http://127.0.0.1:${porta}`,
