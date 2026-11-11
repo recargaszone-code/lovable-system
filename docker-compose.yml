@@ -1,0 +1,47 @@
+version: '3.8'
+
+services:
+  fabricador:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: lovable-fabricador-test
+
+    # Memória alocada: 1.5 GiB (Chrome precisa disso)
+    deploy:
+      resources:
+        limits:
+          memory: 1500M
+        reservations:
+          memory: 1200M
+
+    # Variáveis de ambiente
+    environment:
+      - NODE_ENV=production
+      - CHROME_PATH=/usr/bin/chromium-browser
+      - PORT=3700
+      - RAILWAY_ENVIRONMENT_NAME=local-test
+
+    # Porta exposta
+    ports:
+      - "3700:3700"
+
+    # Volumes: código + saída
+    volumes:
+      - ./contas_concluidas_com_chave.txt:/app/contas_concluidas_com_chave.txt
+      - ./active_keys.json:/app/active_keys.json
+
+    # Healthcheck
+    healthcheck:
+      test: ["CMD", "node", "-e", "require('http').get('http://localhost:3700/health', (r) => {if (r.statusCode !== 200) throw new Error(r.statusCode)})"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 30s
+
+    # Logs
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
